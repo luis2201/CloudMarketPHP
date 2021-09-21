@@ -6,7 +6,7 @@
     $method = "";
     $params = "";
 
-    $url = $_GET["url"] ?? "Index/index";
+    $url = $_GET["url"] ?? "Index/Index";
     $arrayUrl = explode("/", $url);
 
     if (isset($arrayUrl[0])) {
@@ -36,7 +36,15 @@
     if (file_exists($controllersPath)) {
         require $controllersPath;
         $controller = new $controller(); 
-
+        if(isset($method)) { //comprobamos que exista el método
+            if(method_exists($controller, $method)) {
+                if (isset($params)) {
+                    $controller->{$method}($params);
+                } else{
+                    $controller->{$method};
+                }
+            }
+        }
     }
 
 ?>

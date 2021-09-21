@@ -10,8 +10,7 @@ class Controllers {
     }
 
     public function loadClassmodels() {
-      $class = get_class($this);
-      $array = explode('Controller', $class); //Estrayendo el nombre del controlador para luego asociarlo a un Model
+      $array = explode('Controller', get_class($this)); //Estrayendo el nombre del controlador para luego asociarlo a un Model
       $model = $array[0].'_model';
       $path = 'Models/'.$model.'.php';
       if (file_exists($path)) {
