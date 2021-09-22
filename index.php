@@ -31,6 +31,8 @@
         }
     });
     
+    require 'Controllers/ErrorController.php';
+    $error = new ErrorController();
     $controller = $controller.'Controller';
     $controllersPath = "Controllers/".$controller.'.php'; //Comprobamos que exista el controlador en la carpeta Controllers
     if (file_exists($controllersPath)) {
@@ -43,8 +45,12 @@
                 } else{
                     $controller->{$method};
                 }
+            } else {
+                $error->Error($url);
             }
         }
+    } else {
+        $error->Error($url);
     }
 
 ?>
