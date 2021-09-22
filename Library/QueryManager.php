@@ -16,6 +16,22 @@
       }
     }
 
+    public function SelectOne($attr, $tabla, $where, $param) {
+      try {
+        $where = $where ?? "";
+        $sql = "SELECT ".$attr." FROM " .$tabla.$where;
+        $sth = $this->pdo->prepare($sql);
+        $sth->execute($param);
+        $resp = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+        return array("results" => $resp);
+      } catch (\Throwable $th) {
+        return $th->getMessage();
+      }
+
+      $pdo = null;
+    }
+
   }
   
 
