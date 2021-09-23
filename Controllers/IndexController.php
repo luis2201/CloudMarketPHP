@@ -7,6 +7,7 @@
     }
 
     public function Index() {
+      $this->rol->SetRoles();
       $this->view->Render($this, "index", null);
     }
 
