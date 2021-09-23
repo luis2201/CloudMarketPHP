@@ -21,7 +21,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="<?php echo APP; ?>Usuarios/Add" class="nav-link text-white">
               <i data-fa-symbol="users" class="fas fa-users"></i>
               <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                 <use xlink:href="#users" />
