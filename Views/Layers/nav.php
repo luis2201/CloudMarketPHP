@@ -2,7 +2,7 @@
   <div class="px-3 py-2 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+        <a href="<?php echo APP; ?>Index/index" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
           <i data-fa-symbol="copyright" class="far fa-copyright"></i>
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
             <use xlink:href="#copyright" />
@@ -12,7 +12,7 @@
 
         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
           <li>
-            <a href="#" class="nav-link text-white">              
+            <a href="<?php echo APP; ?>Index/index" class="nav-link text-white">              
               <i data-fa-symbol="home" class="fas fa-home"></i>
               <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                 <use xlink:href="#home" />
@@ -21,7 +21,7 @@
             </a>
           </li>
           <li>
-            <a href="<?php echo APP; ?>Usuarios/Add" class="nav-link text-white">
+            <a href="<?php echo APP; ?>Usuarios/list" class="nav-link text-white">
               <i data-fa-symbol="users" class="fas fa-users"></i>
               <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                 <use xlink:href="#users" />
@@ -59,17 +59,5 @@
         </ul>
       </div>
     </div>
-  </div>
-  <div class="px-3 py-2 border-bottom mb-3">
-    <div class="container d-flex flex-wrap justify-content-center">
-      <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-      </form>
-
-      <div class="text-end">
-        <button type="button" class="btn btn-light text-dark me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div>
-    </div>
-  </div>
+  </div>  
 </header>
