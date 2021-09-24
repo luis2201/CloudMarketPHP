@@ -14,9 +14,9 @@
         <div class="card-body">
           <div class="row">
             <div class="col-md-4 border">
-              <p class="text-center">
+              <output class="text-center">
               <img src="<?php echo APP.RESOURCE; ?>img/user-default.png" class="w-75 p-3" alt="user-default">
-              </p>
+              </output>
             </div>
             <div class="col-md-8">
               <form method="post" enctype="nultipart/form-data">
@@ -36,6 +36,12 @@
                     <select id="idrol" name="idrol" class="form-select">
                       <option value="">-- Seleccion un rol de usuario --</option>
                     </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="foto">Foto</label>
+                    <input class="form-control" id="formFileLg" type="file">
                   </div>
                 </div>
                 <div class="row mb-3">

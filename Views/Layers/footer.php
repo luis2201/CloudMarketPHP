@@ -12,18 +12,8 @@
   <!-- DataTables JS -->
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
-  <script>
-
-$(document).ready( function () {
-    $('#tbLista').DataTable({
-      select: true,
-      "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
-        },
-        
-    });
-} );
-  </script>
+  <!-- Site JS -->
+  <script src="<?php echo APP.RESOURCE; ?>js/main.js"></script>
 </body>
 </html>
 
