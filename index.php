@@ -34,7 +34,6 @@
     require 'Controllers/ErrorController.php';
     $error = new ErrorController();
     $controller = $controller.'Controller';
-    echo $controller;
     $controllersPath = "Controllers/".$controller.'.php'; //Comprobamos que exista el controlador en la carpeta Controllers
     if (file_exists($controllersPath)) {
         require $controllersPath;
