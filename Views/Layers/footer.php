@@ -13,7 +13,10 @@
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
   <!-- Site JS -->
-  <script src="<?php echo APP.RESOURCE; ?>js/main.js"></script>
+  <script src="<?php echo APP.RESOURCE; ?>js/UploadImg.js"></script>
+  <script src="<?php echo APP.RESOURCE; ?>js/Usuarios.js"></script>
+  <script src="<?php echo APP.RESOURCE; ?>js/Main.js"></script>
+  <script src="<?php echo APP.RESOURCE; ?>js/App.js"></script>
 </body>
 </html>
 

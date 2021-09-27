@@ -5,9 +5,9 @@
     </div>
     <div class="card-body">
       
-      <div class="card col-md-10 mx-auto border-success">
-        <div class="card-header bg-success text-end" style="padding: 5">
-          <a href="<?php echo APP; ?>Usuarios/add" class="btn btn-sm btn-success">
+      <div class="card col-md-10 mx-auto border-primary">
+        <div class="card-header bg-primary text-end" style="padding: 5">
+          <a href="<?php echo APP; ?>Usuarios/Add" class="btn btn-sm btn-primary">
             <i class="fas fa-plus-circle"></i> Agregar Usuario
           </a>
         </div>

@@ -14,6 +14,10 @@
       $this->view->Render($this, "list", null);
     }
 
+    public function AddUsuarios() {
+
+    }
+
   }
 
 ?>

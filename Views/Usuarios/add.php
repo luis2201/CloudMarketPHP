@@ -6,20 +6,22 @@
     <div class="card-body">
 
       <div class="card col-md-10 mx-auto border-primary">
-        <div class="card-header bg-primary" style="padding: 0 5">
-          <a href="<?php echo APP; ?>Usuarios/list" class="close btn text-white" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <div class="card-header bg-primary text-end" style="padding: 0 5">
+          <a href="<?php echo APP; ?>Usuarios/list" class="btn btn-sm text-white">
+            <i class="fas fa-times-circle"></i>
           </a>
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-4 border">
-              <output class="text-center">
-              <img src="<?php echo APP.RESOURCE; ?>img/user-default.png" class="w-75 p-3" alt="user-default">
-              </output>
+            <div class="col-md-4 border text-center">              
+              <output id="fotoUsuario">
+                <img src="<?php echo APP.RESOURCE; ?>img/user-default.png" class="w-75 p-3" alt="user-default">
+              </output>                            
+              <label for="foto" class="btn btn-sm btn-primary"><i class="fas fa-camera"></i> Cargar Foto</label>
+              <input class="form-control" id="foto" name="foto" type="file" accept="image/*">            
             </div>
             <div class="col-md-8">
-              <form method="post" enctype="nultipart/form-data">
+              <form action="AddUsuarios" method="post" enctype="nultipart/form-data">
                 <div class="row mb-3">
                   <div class="col">
                     <label for="nombres" class="form-label"><strong>Nombres y Apellidos</strong></label>
@@ -37,13 +39,7 @@
                       <option value="">-- Seleccion un rol de usuario --</option>
                     </select>
                   </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col">
-                    <label for="foto">Foto</label>
-                    <input class="form-control" id="formFileLg" type="file">
-                  </div>
-                </div>
+                </div>                
                 <div class="row mb-3">
                   <div class="col-md-6 d-grid">
                   <button type="submit" class="btn btn-block btn-primary">Guardar</button>
