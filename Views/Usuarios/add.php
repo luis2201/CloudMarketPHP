@@ -11,17 +11,17 @@
             <i class="fas fa-times-circle"></i>
           </a>
         </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4 border text-center">              
-              <output id="fotoUsuario">
-                <img src="<?php echo APP.RESOURCE; ?>img/user-default.png" class="w-75 p-3" alt="user-default">
-              </output>                            
-              <label for="foto" class="btn btn-sm btn-primary"><i class="fas fa-camera"></i> Cargar Foto</label>
-              <input class="form-control" id="foto" name="foto" type="file" accept="image/*">            
-            </div>
-            <div class="col-md-8">
-              <form action="AddUsuarios" method="post" enctype="nultipart/form-data">
+        <div class="card-body">          
+          <form action="AddUsuario" method="post" enctype="nultipart/form-data">
+            <div class="row">
+              <div class="col-md-4 border text-center">              
+                <output id="fotoUsuario">
+                  <img src="<?php echo APP.RESOURCE; ?>img/user-default.png" class="w-75 p-3" alt="user-default">
+                </output>                            
+                <label for="foto" class="btn btn-sm btn-primary"><i class="fas fa-camera"></i> Cargar Foto</label>
+                <input class="form-control" id="foto" name="foto" type="file" accept="image/*">            
+              </div>
+              <div class="col-md-8">              
                 <div class="row mb-3">
                   <div class="col">
                     <label for="nombres" class="form-label"><strong>Nombres y Apellidos</strong></label>
@@ -56,10 +56,10 @@
                 <!--<div class="alert alert-danger" role="alert">
                   <i class="fas fa-exclamation-triangle"></i>
                   A simple danger alert—check it out!
-                </div>-->
-              </form>
-            </div>
-          </div> 
+                </div>-->              
+              </div>
+            </div> 
+          </form>  
         </div>
       </div>
 

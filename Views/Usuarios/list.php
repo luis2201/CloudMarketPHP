@@ -23,8 +23,8 @@
                 <th scope="col">Acción</th>
               </tr>
             </thead>
-            <tbody>
-              <?php foreach ($model as $key => $value) { ?>
+            <tbody>              
+              <?php foreach ($model['results'] as $key => $value) { ?>
               <tr>
                 <th scope="row" class="text-center"></th>
                 <td><?php echo $value['nombres']; ?></td>

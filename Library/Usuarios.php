@@ -11,9 +11,9 @@
     public function ListUsuarios() {
       $usuarios = $this->db->SelectAll('U.idusuario, U.nombres, U.usuario, R.rol, U.estado', 'usuarios U INNER JOIN roles R ON U.idrol = R.idrol ORDER BY U.nombres');
       if(is_array($usuarios)) {
-        if (0 < count($usuarios['results'])) {
+        if (0 < count($usuarios['results'])) {          
           return $usuarios['results'];
-        } else {
+        } else {          
           return $usuarios;
         }
       }

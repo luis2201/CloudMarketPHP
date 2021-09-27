@@ -16,8 +16,15 @@
       $this->view->Render($this, "list", $usuarios);
     }
 
-    public function AddUsuarios() {
-
+    public function AddUsuario() {
+      $foto = null;
+      if (isset($_FILES['foto'])) {
+        $file = $_FILES['file']['tmp_name'];
+        if ($file != null) {
+          $contents = file_get_contents($file);
+          $foto = base64_encode($contents);
+        }
+      }
     }
 
   }
