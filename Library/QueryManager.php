@@ -32,6 +32,22 @@
       $pdo = null;
     }
 
+    public function SelectAll($attr, $tabla) {
+      try {
+        $where = $where ?? "";
+        $sql = "SELECT ".$attr." FROM " .$tabla;
+        $sth = $this->pdo->prepare($sql);
+        $sth->execute();
+        $resp = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+        return array("results" => $resp);
+      } catch (\Throwable $th) {
+        return $th->getMessage();
+      }
+
+      $pdo = null;
+    }
+
   }
   
 

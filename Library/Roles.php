@@ -46,6 +46,17 @@
       };
     }
 
+    public function ListRoles() {
+      $roles = $this->db->SelectAll('*', 'roles');
+      if(is_array($roles)) {
+        if (0 < count($roles['results'])) {
+          return $roles['results'];
+        } else {
+          return $roles;
+        }
+      }
+    }
+
   }
 
 ?>

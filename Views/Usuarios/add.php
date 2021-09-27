@@ -37,6 +37,11 @@
                     <label for="idrol" class="form-label"><strong>Rol de Usuario</strong></label>
                     <select id="idrol" name="idrol" class="form-select">
                       <option value="">-- Seleccion un rol de usuario --</option>
+                      <?php
+                        foreach ($model as $key => $value) {
+                          echo '<option value="'.$value["idrol"].'">'.$value["rol"].'</option>';
+                        }
+                      ?>
                     </select>
                   </div>
                 </div>                

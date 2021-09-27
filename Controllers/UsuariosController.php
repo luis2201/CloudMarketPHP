@@ -7,11 +7,13 @@
     }
 
     public function Add() {
-      $this->view->Render($this, "add", null);
+      $roles = $this->rol->ListRoles();
+      $this->view->Render($this, "add", $roles);
     }
 
     public function List() {
-      $this->view->Render($this, "list", null);
+      $usuarios = $this->usuario->ListUsuarios();
+      $this->view->Render($this, "list", $usuarios);
     }
 
     public function AddUsuarios() {

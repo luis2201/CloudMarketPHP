@@ -7,6 +7,7 @@ class Controllers {
     public function __construct() {
       $this->view = new Views();
       $this->rol = new Roles();
+      $this->usuario = new Usuarios();
       $this->loadClassmodels();
     }
 

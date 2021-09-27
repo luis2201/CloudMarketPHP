@@ -24,17 +24,19 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach ($model as $key => $value) { ?>
               <tr>
-                <th scope="row" class="text-center">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th scope="row" class="text-center"></th>
+                <td><?php echo $value['nombres']; ?></td>
+                <td class="text-center"><?php echo $value['usuario']; ?></td>
+                <td class="text-center"><?php echo $value['rol']; ?></td>
+                <td class="text-center"><?php echo $value['estado'] ? '<span class="badge bg-success">ACTIVO</span>' : '<span class="badge bg-danger">INACTIVO</span>'; ?></td>
                 <td class="text-center">
                   <a href="#"><i class="fas fa-edit text-dark"></i></a>
                   <a href="#"><i class="fas fa-trash-alt text-danger"></i></a>
                 </td>
               </tr>
+              <?php } ?>
             </tbody>
           </table>
         </div>
