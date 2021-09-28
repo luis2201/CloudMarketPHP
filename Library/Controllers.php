@@ -2,9 +2,10 @@
 
 use function PHPSTORM_META\type;
 
-class Controllers {
+class Controllers extends Validaciones {
 
     public function __construct() {
+      Session::star();
       $this->view = new Views();
       $this->rol = new Roles();
       $this->usuario = new Usuarios();

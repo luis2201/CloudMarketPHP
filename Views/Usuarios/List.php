@@ -24,7 +24,9 @@
               </tr>
             </thead>
             <tbody>              
-              <?php foreach ($model['results'] as $key => $value) { ?>
+              <?php
+              if(is_array($list['results'])) {
+                foreach ($list['results'] as $key => $value) { ?>
               <tr>
                 <th scope="row" class="text-center"></th>
                 <td><?php echo $value['nombres']; ?></td>
@@ -36,7 +38,10 @@
                   <a href="#"><i class="fas fa-trash-alt text-danger"></i></a>
                 </td>
               </tr>
-              <?php } ?>
+              <?php
+                  } 
+                } 
+              ?>
             </tbody>
           </table>
         </div>

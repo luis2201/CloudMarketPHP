@@ -7,7 +7,7 @@
 
       <div class="card col-md-10 mx-auto border-primary">
         <div class="card-header bg-primary text-end" style="padding: 0 5">
-          <a href="<?php echo APP; ?>Usuarios/list" class="btn btn-sm text-white">
+          <a href="<?php echo APP; ?>Usuarios/List" class="btn btn-sm text-white">
             <i class="fas fa-times-circle"></i>
           </a>
         </div>
@@ -25,24 +25,27 @@
                 <div class="row mb-3">
                   <div class="col">
                     <label for="nombres" class="form-label"><strong>Nombres y Apellidos</strong></label>
-                    <input type="text" id="nombres" name="nombres" class="form-control">
+                    <input type="text" id="nombres" name="nombres" class="form-control" autofocus value="<?php echo $datos->nombres ?? ""; ?>">
+                    <span class="text-danger"><?php echo $valida->nombres ?></span>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="usuario" class="form-label"><strong>Usuario</strong></label>
-                    <input type="text" id="usuario" name="usuario" class="form-control">
+                    <input type="text" id="usuario" name="usuario" class="form-control" value="<?php echo $datos->usuario ?? ""; ?>">
+                    <span class="text-danger"><?php echo $valida->usuario ?></span>
                   </div>
                   <div class="col-md-6">
                     <label for="idrol" class="form-label"><strong>Rol de Usuario</strong></label>
                     <select id="idrol" name="idrol" class="form-select">
                       <option value="">-- Seleccion un rol de usuario --</option>
                       <?php
-                        foreach ($model as $key => $value) {
+                        foreach ($list as $key => $value) {
                           echo '<option value="'.$value["idrol"].'">'.$value["rol"].'</option>';
                         }
                       ?>
                     </select>
+                    <span class="text-danger"><?php echo $valida->idrol ?></span>
                   </div>
                 </div>                
                 <div class="row mb-3">

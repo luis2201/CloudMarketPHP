@@ -2,7 +2,7 @@
 
   class Views {
 
-    public function Render($controllers, $view, $model) {
+    public function Render($controllers, $view, $datos, $valida, $list) {
       $array = explode('Controller', get_class($controllers)); //Extrayendo el nombre del controlador para luego asociarlo a un Model}
       $controller = $array[0];
       require VIEWS.LAYERS."head.php";
