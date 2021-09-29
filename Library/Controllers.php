@@ -1,7 +1,5 @@
 <?php
 
-use function PHPSTORM_META\type;
-
 class Controllers extends Validaciones {
 
     public function __construct() {

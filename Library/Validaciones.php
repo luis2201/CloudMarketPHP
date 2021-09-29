@@ -16,9 +16,7 @@
           if (count($array) > 0) {
             $this->nombres = $array[0];
             $this->usuario = $array[1];
-            //$this->contrasena = $array[2];
-            $this->idrol = $array[3];
-            //$this->foto = $array[4];
+            $this->idrol = $array[2];
           }
         }
       };

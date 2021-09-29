@@ -1,6 +1,8 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+  
+  error_reporting(E_ERROR | E_WARNING | E_PARSE);
+  error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+  
 ?>
 <!DOCTYPE html>
 <html lang="es">

@@ -7,17 +7,17 @@
     }
 
     public function Add() {
-      $roles = $this->rol->ListRoles();
+      $roles = $this->rol->ListRoles();      
       $datos = Session::getSession("datos");
-      $valida = Session::getSession("valida");
+      $valida = Session::getSession("valida");       
       if ($datos != null || $valida != null) {
         $array1 = unserialize($datos);
-        $array2 = unserialize($valida);
+        $array2 = unserialize($valida);        
         if($array1 != null && $array2 != null){
           $datos = $this->Usuario($array1);
-          $valida = $this->Usuario($array2);
-          Session::setSession("datos", "");
-          Session::setSession("valida", "");
+          $valida = $this->Usuario($array2);          
+          Session::setSession('datos', "");
+          Session::setSession('valida', "");
           $this->view->Render($this, "Add", $datos, $valida, $roles);
         } else {
           $this->view->Render($this, "Add", null, null, $roles);
@@ -58,15 +58,13 @@
       $datos = array(
         $_POST['nombres'],
         $_POST['usuario'],
-        $_POST['idrol'],
-        //$_POST['foto']
+        $_POST['idrol']        
       );
-      Session::setSession('datos', serialize('$datos'));
+      Session::setSession('datos', serialize($datos));
       Session::setSession('valida', serialize(array(
         $nombres,
         $usuario,
-        $idrol,
-        /*$foto */
+        $idrol        
       )));
       header('Location: Add');
     }
