@@ -12,11 +12,23 @@
           </a>
         </div>
         <div class="card-body">          
-          <form action="AddUsuario" method="post" enctype="nultipart/form-data">
+          <form action="AddUsuario" method="post" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-4 border text-center">              
                 <output id="fotoUsuario">
-                  <img src="<?php echo APP.RESOURCE; ?>img/user-default.png" class="w-75 p-3" alt="user-default">
+                  <img src="<?php 
+                    
+                    if ($datos != null) {
+                      if($datos->foto != null) {
+                        echo 'data:image/jpeg;base64,'.$datos->foto;
+                      } else {
+                        echo APP.RESOURCE.'img/user-default.png';
+                      } 
+                    } else {
+                      echo APP.RESOURCE.'img/user-default.png'; 
+                    }
+                  
+                  ?>" class="w-75 p-3" alt="user-default">
                 </output>                            
                 <label for="foto" class="btn btn-sm btn-primary"><i class="fas fa-camera"></i> Cargar Foto</label>
                 <input class="form-control" id="foto" name="foto" type="file" accept="image/*">            
@@ -36,16 +48,18 @@
                     <span class="text-danger"><?php echo $valida->usuario ?></span>
                   </div>
                   <div class="col-md-6">
-                    <label for="idrol" class="form-label"><strong>Rol de Usuario</strong></label>
-                    <select id="idrol" name="idrol" class="form-select">
-                      <option value="">-- Seleccion un rol de usuario --</option>
+                    <label for="rol" class="form-label"><strong>Rol de Usuario</strong></label>
+                    <select id="rol" name="rol" class="form-select">
                       <?php
+                        if ($valida == null) {
+                          echo '<option>-- Seleccione un rol de usuario --</option>';
+                        } 
                         foreach ($list as $key => $value) {
-                          echo '<option value="'.$value["idrol"].'">'.$value["rol"].'</option>';
+                          echo '<option>'.$value["rol"].'</option>';
                         }
                       ?>
                     </select>
-                    <span class="text-danger"><?php echo $valida->idrol ?></span>
+                    <span class="text-danger"><?php echo $valida->rol ?></span>
                   </div>
                 </div>                
                 <div class="row mb-3">

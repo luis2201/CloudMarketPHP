@@ -7,7 +7,9 @@
     }
 
     static function getSession($name) {
-      return $_SESSION[$name];
+      if (isset($_SESSION[$name])) {
+        return $_SESSION[$name];
+      }
     }
 
     static function setSession($name, $data) {

@@ -38,7 +38,7 @@
         var $rol;
 
         function __construct($array) {
-          if (0 < count($array)) {
+          if (count($array) > 0) {
             $this->rol = $array[0];
           }
         }
@@ -49,7 +49,7 @@
     public function ListRoles() {
       $roles = $this->db->SelectAll('*', 'roles');
       if(is_array($roles)) {
-        if (0 < count($roles['results'])) {
+        if (count($roles['results']) > 0) {
           return $roles['results'];
         } else {
           return $roles;

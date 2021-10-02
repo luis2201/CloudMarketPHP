@@ -9,14 +9,15 @@
         public $nombres;
         public $usuario;
         public $contrasena;
-        public $idrol;
+        public $rol;
         public $foto;
 
         function __construct($array) {
           if (count($array) > 0) {
             $this->nombres = $array[0];
             $this->usuario = $array[1];
-            $this->idrol = $array[2];
+            $this->rol = $array[2];
+            $this->foto = $array[3];
           }
         }
       };

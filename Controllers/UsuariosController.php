@@ -18,7 +18,15 @@
           $valida = $this->Usuario($array2);          
           Session::setSession('datos', "");
           Session::setSession('valida', "");
-          $this->view->Render($this, "Add", $datos, $valida, $roles);
+          $rol = array(array("rol" => $datos->rol));
+          $i = 1;
+          foreach($roles as $key => $value){
+            if ($datos->rol != $value["rol"]) {
+              $rol[$i] = array("rol" => $value["rol"]);
+              $i++;
+            }
+          }
+          $this->view->Render($this, "Add", $datos, $valida, $rol);
         } else {
           $this->view->Render($this, "Add", null, null, $roles);
         }
@@ -34,15 +42,8 @@
     }
 
     public function AddUsuario() {
-      /*$foto = null;
-      if (isset($_FILES['foto'])) {
-        $file = $_FILES['file']['tmp_name'];
-        if ($file != null) {
-          $contents = file_get_contents($file);
-          $foto = base64_encode($contents);
-        }
-      }*/
       $execute = true;
+      $foto = null;
       if (empty($_POST['nombres'])) {
         $nombres = '<i class="fas fa-exclamation-circle"></i>  Ingrese nombres y apellidos';
         $execute = false;
@@ -51,20 +52,29 @@
         $usuario = '<i class="fas fa-exclamation-circle"></i>  Ingrese usuario';
         $execute = false;
       }
-      if (empty($_POST['idrol'])) {
-        $idrol = '<i class="fas fa-exclamation-circle"></i>  Seleccione un rol de usuario';
+      if ($_POST['rol'] == "-- Seleccione un rol de usuario --") {
+        $rol = '<i class="fas fa-exclamation-circle"></i>  Seleccione un rol de usuario';
         $execute = false;
+      }
+      if (isset($_FILES['foto'])) {
+        $file = $_FILES['foto']['tmp_name'];
+        if ($file != null) {
+          $contents = file_get_contents($file);
+          $foto = base64_encode($contents);
+        }
       }
       $datos = array(
         $_POST['nombres'],
         $_POST['usuario'],
-        $_POST['idrol']        
+        $_POST['rol'],
+        $foto
       );
       Session::setSession('datos', serialize($datos));
       Session::setSession('valida', serialize(array(
         $nombres,
         $usuario,
-        $idrol        
+        $rol,
+        ""    
       )));
       header('Location: Add');
     }

@@ -25,8 +25,7 @@
             </thead>
             <tbody>              
               <?php
-              if(is_array($list['results'])) {
-                foreach ($list['results'] as $key => $value) { ?>
+                foreach ($list as $key => $value) { ?>
               <tr>
                 <th scope="row" class="text-center"></th>
                 <td><?php echo $value['nombres']; ?></td>
@@ -39,7 +38,6 @@
                 </td>
               </tr>
               <?php
-                  } 
                 } 
               ?>
             </tbody>
