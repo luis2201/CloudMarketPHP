@@ -14,11 +14,12 @@
         $array1 = unserialize($datos);
         $array2 = unserialize($valida);        
         if($array1 != null && $array2 != null){
-          $datos = $this->Usuario($array1);
-          $valida = $this->Usuario($array2);          
+          $datos = $this->Usuario($array1);          
+          $valida = $this->Usuario($array2);
           Session::setSession('datos', "");
           Session::setSession('valida', "");
           $rol = array(array("rol" => $datos->rol));
+          print_r($datos);
           $i = 1;
           foreach($roles as $key => $value){
             if ($datos->rol != $value["rol"]) {
@@ -52,7 +53,7 @@
         $usuario = '<i class="fas fa-exclamation-circle"></i>  Ingrese usuario';
         $execute = false;
       }
-      if ($_POST['rol'] == "-- Seleccione un rol de usuario --") {
+      if ($_POST['rol'] == "") {
         $rol = '<i class="fas fa-exclamation-circle"></i>  Seleccione un rol de usuario';
         $execute = false;
       }

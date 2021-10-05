@@ -37,29 +37,29 @@
                 <div class="row mb-3">
                   <div class="col">
                     <label for="nombres" class="form-label"><strong>Nombres y Apellidos</strong></label>
-                    <input type="text" id="nombres" name="nombres" class="form-control" autofocus value="<?php echo $datos->nombres ?? ""; ?>">
-                    <span class="text-danger"><?php echo $valida->nombres ?></span>
+                    <input type="text" id="nombres" name="nombres" class="form-control" onkeypress="new Usuarios().HideMessages(this);" autofocus value="<?php echo $datos->nombres ?? ""; ?>">
+                    <span id="mnombres" class="text-danger"><?php echo $valida->nombres ?></span>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="usuario" class="form-label"><strong>Usuario</strong></label>
-                    <input type="text" id="usuario" name="usuario" class="form-control" value="<?php echo $datos->usuario ?? ""; ?>">
-                    <span class="text-danger"><?php echo $valida->usuario ?></span>
+                    <input type="text" id="usuario" name="usuario" class="form-control" onkeypress="new Usuarios().HideMessages(this);" value="<?php echo $datos->usuario ?? ""; ?>">
+                    <span id="musuario" class="text-danger"><?php echo $valida->usuario ?></span>
                   </div>
                   <div class="col-md-6">
                     <label for="rol" class="form-label"><strong>Rol de Usuario</strong></label>
-                    <select id="rol" name="rol" class="form-select">
+                    <select id="rol" name="rol" class="form-select" onchange="new Usuarios().HideMessages(this);">
                       <?php
                         if ($valida == null) {
-                          echo '<option>-- Seleccione un rol de usuario --</option>';
+                          echo '<option value="'.$value["idrol"].'">-- Seleccione un rol de usuario --</option>';
                         } 
                         foreach ($list as $key => $value) {
-                          echo '<option>'.$value["rol"].'</option>';
+                          echo '<option value="'.$value["idrol"].'">'.$value["rol"].'</option>';
                         }
                       ?>
                     </select>
-                    <span class="text-danger"><?php echo $valida->rol ?></span>
+                    <span id="mrol" class="text-danger"><?php echo $valida->rol ?></span>
                   </div>
                 </div>                
                 <div class="row mb-3">
