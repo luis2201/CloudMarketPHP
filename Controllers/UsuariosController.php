@@ -19,11 +19,10 @@
           Session::setSession('datos', "");
           Session::setSession('valida', "");
           $rol = array(array("rol" => $datos->rol));
-          print_r($datos);
           $i = 1;
           foreach($roles as $key => $value){
-            if ($datos->rol != $value["rol"]) {
-              $rol[$i] = array("rol" => $value["rol"]);
+            if ($datos->rol != $value["idrol"]) {
+              $rol[$i] = array("idrol" => $value["idrol"], "rol" => $value["rol"]);
               $i++;
             }
           }

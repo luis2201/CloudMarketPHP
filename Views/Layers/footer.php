@@ -13,12 +13,14 @@
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
   <!-- Validate JS -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.js"></script>
+  <!-- JQueryConfirm JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   <!-- Site JS -->
-  <script src="<?php echo APP.RESOURCE; ?>js/UploadImg.js"></script>
-  <script src="<?php echo APP.RESOURCE; ?>js/Usuarios.js"></script>
+  
   <script src="<?php echo APP.RESOURCE; ?>js/Main.js"></script>
-  <script src="<?php echo APP.RESOURCE; ?>js/App.js"></script>
+  <script src="<?php echo APP.RESOURCE; ?>js/Usuarios.js"></script>
+  
 </body>
 </html>
 

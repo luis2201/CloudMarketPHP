@@ -8,23 +8,16 @@ $(document).ready( function () {
   });
 } );
 
-class Main {
+$('.frmAction').submit(function(event){	
+	event.preventDefault();
+  /*
+	var x = ($(this).validate());	
+	if(x.errorList.length>0){		
+		return;
+	}
+  */
+});
 
-  linkPrincipal(URLactual) {    
-    let url = "";
-    let cadena = URLactual.split("/");
-
-    for (let i = 0; i < cadena.length; i++) {
-      if (i >= 2) {
-        url += cadena[i];        
-      }
-    }        
-
-    switch (url) {
-      case "UsuariosAdd":        
-        document.getElementById('foto').addEventListener('change', fotoUsuario, false);
-        break;      
-    }
-  }
-
-}
+$('#btnCancelar').click(function() {
+  $('.frmAction')[0].reset();
+});
