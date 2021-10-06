@@ -19,6 +19,7 @@
   <!-- Site JS -->
   
   <script src="<?php echo APP.RESOURCE; ?>js/Main.js"></script>
+  <script src="<?php echo APP.RESOURCE; ?>js/UploadImg.js"></script>
   <script src="<?php echo APP.RESOURCE; ?>js/Usuarios.js"></script>
   
 </body>

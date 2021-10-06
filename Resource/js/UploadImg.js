@@ -1,18 +1,20 @@
-class UploadImg {
+// Obtener referencia al input y a la imagen
+const $seleccionArchivos = document.querySelector("#foto"),
+$imagenPrevisualizacion = document.querySelector("#img");
 
-    archivo(evt, id) {
-      let files = evt.target.files;  //Extrayendo la lista de objetos del input
-      let f = files[0];
-
-      if (f.type.match('image.*')) {
-        let reader = new FileReader();
-        reader.onload = ((theFile) => {
-          return (e) => {
-            document.getElementById(id).innerHTML = ['<img class="w-75 p-3" src="', e.target.result, '" title="', escape(theFile.name), '"/>'].join('');
-          }
-        })(f);
-        reader.readAsDataURL(f);
-      }
-    }
-
-}
+// Escuchar cuando cambie
+$seleccionArchivos.addEventListener("change", () => {
+  // Los archivos seleccionados, pueden ser muchos o uno
+  const archivos = $seleccionArchivos.files;
+  // Si no hay archivos salimos de la función y quitamos la imagen
+  if (!archivos || !archivos.length) {
+    $imagenPrevisualizacion.src = "";
+    return;
+  }
+  // Ahora tomamos el primer archivo, el cual vamos a previsualizar
+  const primerArchivo = archivos[0];
+  // Lo convertimos a un objeto de tipo objectURL
+  const objectURL = URL.createObjectURL(primerArchivo);
+  // Y a la fuente de la imagen le ponemos el objectURL
+  $imagenPrevisualizacion.src = objectURL;
+});

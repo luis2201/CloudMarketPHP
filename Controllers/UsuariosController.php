@@ -8,32 +8,8 @@
 
     public function Add() {
       $roles = $this->rol->ListRoles();      
-      $datos = Session::getSession("datos");
-      $valida = Session::getSession("valida");       
-      if ($datos != null || $valida != null) {
-        $array1 = unserialize($datos);
-        $array2 = unserialize($valida);        
-        if($array1 != null && $array2 != null){
-          $datos = $this->Usuario($array1);          
-          $valida = $this->Usuario($array2);
-          Session::setSession('datos', "");
-          Session::setSession('valida', "");
-          $rol = array(array("rol" => $datos->rol));
-          $i = 1;
-          foreach($roles as $key => $value){
-            if ($datos->rol != $value["idrol"]) {
-              $rol[$i] = array("idrol" => $value["idrol"], "rol" => $value["rol"]);
-              $i++;
-            }
-          }
-          $this->view->Render($this, "Add", $datos, $valida, $rol);
-        } else {
-          $this->view->Render($this, "Add", null, null, $roles);
-        }
-      } else {
-        $this->view->Render($this, "Add", null, null, $roles);
-      }
-      
+      echo '<script>alert("kakakak");</script>';
+      $this->view->Render($this, "Add", null, null, $roles);
     }
 
     public function List() {
@@ -80,5 +56,3 @@
     }
 
   }
-
-?>

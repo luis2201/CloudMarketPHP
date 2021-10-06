@@ -16,19 +16,7 @@
             <div class="row">
               <div class="col-md-4 border text-center">
                 <output id="fotoUsuario">
-                  <img src="<?php
-
-                            if ($datos != null) {
-                              if ($datos->foto != null) {
-                                echo 'data:image/jpeg;base64,' . $datos->foto;
-                              } else {
-                                echo APP . RESOURCE . 'img/user-default.png';
-                              }
-                            } else {
-                              echo APP . RESOURCE . 'img/user-default.png';
-                            }
-
-                            ?>" class="w-75 p-3" alt="user-default">
+                  <img id="img" src="<?php echo APP . RESOURCE . 'img/user-default.png'; ?>" class="w-75 p-3" alt="user-default">
                 </output>
                 <label for="foto" class="btn btn-sm btn-primary"><i class="fas fa-camera"></i> Cargar Foto</label>
                 <input class="form-control" id="foto" name="foto" type="file" accept="image/*">
