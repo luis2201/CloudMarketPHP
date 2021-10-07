@@ -76,6 +76,7 @@ function HideMessages(input) {
 }
 
 $('#btnCancelar').click(function () {
-  $('.frmAction')[0].reset();
-  $('img').attr('src', '/CloudMarketPHP/Resource/img/user-default.png'); 
+  //$('.frmAction')[0].reset();
+  //$('img').attr('src', '/CloudMarketPHP/Resource/img/user-default.png'); 
+  location.reload();
 });

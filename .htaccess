@@ -9,7 +9,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 #a un archivo que existe en el servidor
 RewriteCond %{REQUEST_FILENAME} !-f
 
+RewriteCond %{REQUEST_FILENAME} !-l
+
 #La parte ^ (. *) $ Le dice al módulo de reescritura que queremos pasar la ruta
 #completa solicitada como un parámetro. La parte de QSA le dice al módulo que 
 #debe anexar cualquier cadena de consulta a la solicitud
-RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

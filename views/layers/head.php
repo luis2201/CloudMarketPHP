@@ -20,8 +20,8 @@
   <!-- JQueryConfirm CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
   <!-- CSS Site -->
-  <link rel="stylesheet" href="<?php echo APP.RESOURCE; ?>css/style.css">
-  <script defer src="<?php echo APP.RESOURCE; ?>fontawesome/js/all.js"></script>
+  <link rel="stylesheet" href="<?php echo URL.RESOURCE; ?>css/style.css">
+  <script defer src="<?php echo URL.RESOURCE; ?>fontawesome/js/all.js"></script>
   <!-- Título de la página -->
   <title>Cloud Market | Sistema para Punto de Venta</title>
 </head>
