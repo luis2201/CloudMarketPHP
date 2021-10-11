@@ -9,7 +9,7 @@
 
     public function __construct() {
       $this->successList = [
-        successMessages::PRUEBA => 'Mensaje de exito';
+        successMessages::PRUEBA => 'Mensaje de exito'
       ]; 
     }
 
