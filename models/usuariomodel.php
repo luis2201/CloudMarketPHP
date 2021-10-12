@@ -6,7 +6,7 @@
     private $nombres;
     private $usuario;
     private $contrasena;
-    private $idrol;
+    private $rol;
     private $foto;
     private $estado;
 
@@ -22,12 +22,12 @@
     
     public function save() {
       try {
-        $query = $this->prepare('INSERT INTO usuarios(nombres, usuario, contrasena, idrol, foto) VALUES(:nombres, :usuario, :contrasena, :idrol, :foto);');
+        $query = $this->prepare('INSERT INTO usuarios(nombres, usuario, contrasena, rol, foto) VALUES(:nombres, :usuario, :contrasena, :rol, :foto);');
         $query->execute([
           'nombres'     => $this->nombres,
           'usuario'     => $this->usuario,
           'contrasena'  => $this->contrasena,
-          'idrol'       => $this->idrol,
+          'rol'       => $this->rol,
           'foto'        => $this->foto
         ]);
 
@@ -51,7 +51,7 @@
         $this->setNombres($result['nombres']);
         $this->setUsuario($result['usuario']);
         $this->setContrasena($result['contrasena']);
-        $this->setIdRol($result['idrol']);
+        $this->setRol($result['rol']);
         $this->setFoto($result['foto']);
         $this->setEstado($result['estado']);
         
@@ -72,7 +72,7 @@
           $item->setNombres($result['nombres']);
           $item->setUsuario($result['usuario']);
           $item->setContrasena($result['contrasena']);
-          $item->setIdRol($result['idrol']);
+          $item->setRol($result['rol']);
           $item->setFoto($result['foto']);
           $item->setEstado($result['estado']);
 
@@ -101,12 +101,12 @@
 
     public function update() {
       try {
-        $query = $this->prepare('UPDATE usuarios SET nombres = :nombres, usuario = :usuario, idrol = :idrol, foto = :foto WHERE idusuario = :idusuario');
+        $query = $this->prepare('UPDATE usuarios SET nombres = :nombres, usuario = :usuario, rol = :rol, foto = :foto WHERE idusuario = :idusuario');
         $query->execute([
           "idusuario"   => $this->idusuario,
           "nombres"     => $this->nombres,
           "usuario"     => $this->usuario,
-          "idrol"       => $this->idrol,
+          "rol"       => $this->rol,
           "foto"        => $this->foto          
         ]);        
         
@@ -122,7 +122,7 @@
       $this->nombres    = $array['nombres'];
       $this->usuario    = $array['usuario'];
       $this->contrasena = $array['contrasena'];
-      $this->idrol      = $array['idrol'];
+      $this->rol        = $array['rol'];
       $this->foto       = $array['foto'];
       $this->estado     = $array['estado'];
     }
@@ -175,8 +175,8 @@
       $this->contrasena = $this->getHashedContrasena($contrasena);
     }
 
-    public function setIdRol($idrol) {
-      $this->idrol = $idrol;
+    public function setRol($rol) {
+      $this->rol = $rol;
     }
 
     public function setFoto($foto) {
@@ -203,8 +203,8 @@
       return $this->contrasena;
     }
 
-    public function getIdRol() {
-      return $this->idrol;
+    public function getRol() {
+      return $this->rol;
     }
 
     public function getFoto() {

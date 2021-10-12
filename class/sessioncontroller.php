@@ -38,7 +38,7 @@
 
     public function validateSession() {
       if ($this->existsSession()) {
-        $role = $this->getUserSessionData()->getIdRol();
+        $role = $this->getUserSessionData()->getRol();
 
         if ($this->isPublic()) {
           $this->redirectDefaultSiteByRole($role);
