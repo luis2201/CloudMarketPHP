@@ -63,7 +63,7 @@
         $params = '?' . $params;
       }
 
-      header('Location: ' . constant(URL) . $url . $params);
+      header('Location: ' . constant('URL') . $url . $params);
     }
 
   }

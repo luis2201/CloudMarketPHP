@@ -15,9 +15,9 @@
       $this->nombres = '';
       $this->usuario = '';
       $this->contrasena = '';
-      $this->idrol = '';
+      $this->rol = '';
       $this->foto = '';
-      $this->estado = false;
+      $this->estado = '';
     }
     
     public function save() {
@@ -27,13 +27,13 @@
           'nombres'     => $this->nombres,
           'usuario'     => $this->usuario,
           'contrasena'  => $this->contrasena,
-          'rol'       => $this->rol,
+          'rol'         => $this->rol,
           'foto'        => $this->foto
         ]);
 
         return true;
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
         return false;        
       }
     }
@@ -57,7 +57,7 @@
         
         return $this;
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
       }
     }
 
@@ -81,7 +81,7 @@
 
         return $items;
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
       }
     }    
 
@@ -94,7 +94,7 @@
 
         return true;
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
         return false;
       }
     }
@@ -112,7 +112,7 @@
         
         return true;
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
         return false;
       }
     }
@@ -129,7 +129,7 @@
 
     public function exists($usuario) {
       try {
-        $query = $this->prepare("SELECT usuario WHERE usuario = :usuario");
+        $query = $this->prepare("SELECT usuario FROM usuarios WHERE usuario = :usuario");
         $query->execute([
           "usuario"     => $usuario
         ]);
@@ -139,7 +139,7 @@
           return false;
         }
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
         return false;
       }
     }
@@ -150,7 +150,7 @@
 
         return password_verify($contrasena, $result->getContrasena());
       } catch (PDOException $th) {
-        echo '¡Error! ' . $th;
+        error_log('¡Error! ' . $th);
         return false;
       }
     }

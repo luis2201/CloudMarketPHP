@@ -21,6 +21,8 @@
   <script src="<?php echo URL.RESOURCE; ?>js/Main.js"></script>
   <script src="<?php echo URL.RESOURCE; ?>js/UploadImg.js"></script>
   <script src="<?php echo URL.RESOURCE; ?>js/Usuarios.js"></script>
+
+  <?php $this->showMessagess(); ?>
   
 </body>
 </html>

@@ -1,5 +1,7 @@
 <?php
 
+  require_once 'models/usuariomodel.php';
+  
   class Signup extends SessionController {
 
     function __construct() {
@@ -12,8 +14,8 @@
 
     function newUser() {
       if ($this->existsPOST(['usuario', 'contrasena'])) {
-        $usuario = $this->getPost('usuario');
-        $contrasena = $this->getPost('contrasena');
+        $usuario = trim($this->getPost('usuario'));
+        $contrasena = trim($this->getPost('contrasena'));
 
         if ($usuario == '' || empty($usuario) || $contrasena == '' || empty($contrasena)) {
           $this->redirect('signup', ['error' => ErrorMessages::ERROR_SIGNUP_NEWUSER_EMPTY]);

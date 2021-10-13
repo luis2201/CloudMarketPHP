@@ -52,15 +52,29 @@
 
     public function showErrors() {
       if (array_key_exists('error', $this->d)) {
-        echo '<div class="error">' . $this->d['error'] . '</div>';
-        //echo '<script>alert("aaaa");</script>';
+        echo '<script>
+                $.alert({ 
+                  title   : "Ocurrió un error", 
+                  icon    : "fas fa-exclamation-circle",
+                  content : "' . $this->d['error'] . '",
+                  type    : "orange",
+                  theme   : "supervan",                            
+              });
+              </script>';
       }
     }
 
     public function showSuccess() {
       if (array_key_exists('success', $this->d)) {
-        //echo '<div class="success">' . $this->d['success'] . '</div>';
-        echo '<script>alert("' . $this->d['success'] . '");</script>';
+        echo '<script>
+                $.alert({ 
+                  title   : "Operaci&oacute;n satisfactoria", 
+                  icon    : "fas fa-check-circle",
+                  content : "' . $this->d['success'] . '",
+                  type    : "blue",
+                  theme   : "supervan",                            
+              });
+              </script>';
       }
     }
 

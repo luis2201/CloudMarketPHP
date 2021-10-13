@@ -1,6 +1,7 @@
 <?php
 
   require_once 'class/session.php';
+  require_once 'models/usuariomodel.php';
 
   class SessionController extends Controller {
 
@@ -75,7 +76,8 @@
     }
 
     function getUserSessionData() {
-      $idusuario = $this->idusuario;
+      $idusuario = $this->session->getCurrentUser();
+
       $this->user = new UsuarioModel();
       $this->user->get($idusuario);
 
@@ -111,7 +113,7 @@
         }
       }
 
-      header('Location:' . $url);
+      header('Location:' . constant('URL') . $url);
     }
 
     private function isAuthorized($role) {
@@ -129,17 +131,17 @@
 
     function initialize($user) {
       $this->session->setCurrentUser($user->getIdUsuario());
-      $this->authorizedAccess($user->getRole());
+      $this->authorizedAccess($user->getRol());
     }
 
     function authorizedAccess($role) {
       switch ($role) {
         case 'user':
-          $this->redirect($this->defaultSites['user'], []);
+          $this->redirect($this->defaultsites['user'], []);
           break;
         
         case 'admin':
-          $this->redirect($this->defaultSites['admin'], []);
+          $this->redirect($this->defaultsites['admin'], []);
           break;
       }
     }
