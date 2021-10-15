@@ -10,7 +10,7 @@
     
     function login($usuario, $contrasena) {
       try {
-        $query = $this->prepare("SELECT * FROM usuarios WHERE usuario = :usuario");
+        $query = $this->prepare("CALL sp_login(:usuario)");
         $query->execute(['usuario' => $usuario]);
 
         if($query->rowCount() == 1) {
