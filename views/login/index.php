@@ -12,7 +12,7 @@
           </a>
         </div>
         <div class="card-body">
-          <form class="" action="<?php echo constant('URL'); ?>login/authenticate" method="POST">
+          <form class="" action="<?php echo constant('URL'); ?>/login/authenticate" method="POST">
             <div class="row">              
               <div class="col">
                 <div class="row mb-3">

@@ -11,7 +11,8 @@
       $url = explode('/', $url);
       
       //Si no existe ningún parámetro enviado por url redirija a login
-      if (empty($url[0])) {        
+      if (empty($url[0])) {
+        error_log("APP::construct -> no hay controlador especificado")        ;
         $fileController = 'controllers/login.php';
 
         require_once $fileController;
@@ -24,6 +25,7 @@
       }
       //Si url contiene parámetros validamos que exista el controlador 
       $fileController = 'controllers/' . $url[0] . '.php';
+      
       if (file_exists($fileController)) {
         require_once $fileController;
         
@@ -40,7 +42,7 @@
               $params = [];
 
               for ($i=0; $i < $nparam; $i++) { 
-                array_push($params, $url[$i+2]);
+                array_push($params, $url[$i]+2);
               }
 
               $controller->{$url[1]}($params);

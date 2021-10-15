@@ -111,7 +111,8 @@
       
       for ($i=0; $i < sizeof($this->sites); $i++) { 
         if ($this->sites[$i]['role'] == $role) {
-          $url = '/CloudMarketPHP/' . $this->sites[$i]['site'];
+          //$url = '/CloudMarketPHP/' . $this->sites[$i]['site'];
+          $url = '/' . $this->sites[$i]['site'];
           
           break;
         }
@@ -124,8 +125,8 @@
       $currentURL = $this->getCurrentPage();
       $currentURL = preg_replace("/\?.*/", "", $currentURL);
 
-      for ($i=0; $i < sizeof($this->sites); $i++) { 
-        if ($currentURL == $this->sites[$i]['site'] && $this->site[$i]['role'] == $role) {
+      for ($i=0; $i < sizeof($this->sites); $i++) {                 
+        if ($currentURL == $this->sites[$i]['site'] && $this->sites[$i]['role'] == $role) {                   
           return true;
         }
       }
@@ -138,7 +139,7 @@
       $this->authorizedAccess($user->getRol());
     }
 
-    function authorizedAccess($role) {
+    function authorizedAccess($role) {      
       switch ($role) {
         case 'user':
           $this->redirect($this->defaultsites['user'], []);

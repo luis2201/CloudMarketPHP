@@ -1,6 +1,6 @@
 <?php
 
-  define('URL', 'http://localhost/CloudMarketPHP/');
+  define('URL', 'http://localhost/CloudMarketPHP');
 
   define('HOST', 'localhost');
   define('DB', 'cloudmarket');
@@ -13,5 +13,4 @@
   define('LAYERS', 'layers/');
   define('RESOURCE', 'resource/');
   
-
 ?>
