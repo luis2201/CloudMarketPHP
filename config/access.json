@@ -16,7 +16,7 @@
       "role"    : "user"
     },
     {
-      "site"    : "expenses",
+      "site"    : "CloudMarketPHP",
       "access"  : "private",
       "role"    : "user"
     },
@@ -32,10 +32,8 @@
     }
   ],
 
-  "default-sites":[
-    {
+  "default-sites":{
       "user"    : "dashboard",
       "admin"   : "admin"
     }
-  ]
 }

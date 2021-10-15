@@ -32,7 +32,7 @@
 
     private function getJSONFileConfig() {
       $string = file_get_contents('config/access.json');
-      $json = json_decode($string, true)      ;
+      $json = json_decode($string, true);
 
       return $json;
     }
@@ -70,13 +70,15 @@
 
       $idusuario = $this->session->getCurrentUser();
 
-      if($idusuario) return true;
+      if($idusuario) {
+        return true;
+      }
 
       return false;
     }
 
     function getUserSessionData() {
-      $idusuario = $this->session->getCurrentUser();
+      $idusuario = $this->session->getCurrentUser(); // <-----
 
       $this->user = new UsuarioModel();
       $this->user->get($idusuario);
@@ -106,9 +108,11 @@
 
     private function redirectDefaultSiteByRole($role) {
       $url = '';
+      
       for ($i=0; $i < sizeof($this->sites); $i++) { 
         if ($this->sites[$i]['role'] == $role) {
           $url = '/CloudMarketPHP/' . $this->sites[$i]['site'];
+          
           break;
         }
       }
