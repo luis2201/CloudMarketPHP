@@ -14,7 +14,7 @@ $(document).ready(function () {
 });
 
 $('.frmAction').submit(function (event) {
-  event.preventDefault();
+  //event.preventDefault();
 
   var x = ($(this).validate());
   if (x.errorList.length > 0) {

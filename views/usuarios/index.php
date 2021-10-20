@@ -7,7 +7,7 @@
       
       <div class="card col-md-10 mx-auto border-primary">
         <div class="card-header bg-primary text-end" style="padding: 5">
-          <a href="<?php echo APP; ?>Usuarios/Add" class="btn btn-sm btn-primary">
+          <a href="<?php echo URL; ?>usuario/register" class="btn btn-sm btn-primary">
             <i class="fas fa-plus-circle"></i> Agregar Usuario
           </a>
         </div>

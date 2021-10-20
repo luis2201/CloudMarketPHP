@@ -24,7 +24,7 @@ var validator = $('.frmAction').validate({
       minlength: 6,
       maxlength: 25
     },
-    rol: {
+    idrol: {
       required: true
     }
   },
@@ -40,7 +40,7 @@ var validator = $('.frmAction').validate({
       minlength: "El usuario debe ser una cadena de al menos 6 caracteres",
       maxlength: "El usuario debe ser un cadena no mayor a 25 caracteres"
     },
-    rol: {
+    idrol: {
       required: "<i class='fas fa-exclamation-circle'></i> Seleccione el rol del usuario"
     }
   },
@@ -68,9 +68,9 @@ function HideMessages(input) {
       document.getElementById("musuario").innerHTML = "";
       break;
 
-    case "rol":
+    case "idrol":
       element.classList.remove("form-error");
-      document.getElementById("mrol").innerHTML = "";
+      document.getElementById("midrol").innerHTML = "";
       break;
   }
 }

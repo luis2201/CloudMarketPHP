@@ -16,10 +16,9 @@
   <!-- JQueryConfirm JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   <!-- Site JS -->
-  
   <script src="<?php echo URL.RESOURCE; ?>js/Main.js"></script>
   <script src="<?php echo URL.RESOURCE; ?>js/UploadImg.js"></script>
-  <script src="<?php echo URL.RESOURCE; ?>js/Usuarios.js"></script>  
+  <script src="<?php echo URL.RESOURCE; ?>js/Usuarios.js"></script>
   
 </body>
 </html>

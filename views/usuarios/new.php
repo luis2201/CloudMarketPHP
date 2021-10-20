@@ -12,7 +12,7 @@
           </a>
         </div>
         <div class="card-body">
-          <form class="frmAction" action="AddUsuario" method="post" enctype="multipart/form-data">
+          <form class="frmAction" action="<?php echo constant('URL') . "usuario/register" ?>" method="post" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-4 border text-center">
                 <output id="fotoUsuario">
@@ -36,11 +36,12 @@
                     <span id="musuario" class="text-danger"></span>
                   </div>
                   <div class="col-md-6">
-                    <label for="rol" class="form-label"><strong>Rol de Usuario</strong></label>
-                    <select id="rol" name="rol" class="form-select" onchange="HideMessages(this);">
-                      <option value="">-- Seleccione un rol de usuario --</option>                     
+                    <label for="idrol" class="form-label"><strong>Rol de Usuario</strong></label>
+                    <select id="idrol" name="idrol" class="form-select" onchange="HideMessages(this);">
+                      <option value="">-- Seleccione un rol de usuario</option>
+                      <option value="usuario">Usuario --</option>                      
                     </select>
-                    <span id="mrol" class="text-danger"></span>
+                    <span id="midrol" class="text-danger"></span>
                   </div>
                 </div>
                 <div class="row mb-3">
