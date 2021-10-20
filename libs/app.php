@@ -1,70 +1,46 @@
 <?php
 
-  require_once 'controllers/errores.php';
-
+  require_once 'controllers/error.php';
+  
   class App {
         
-    function __construct() {
+    function __construct() {      
       //Validación de la url y asignado un valor
       $url = isset($_GET['url']) ? $_GET['url'] : null;
       $url = rtrim($url, '/');
       $url = explode('/', $url);
       
-      //Si no existe ningún parámetro enviado por url redirija a login
-      if (empty($url[0])) {
-        error_log("APP::construct -> no hay controlador especificado")        ;
-        $fileController = 'controllers/login.php';
-
+      //Si no se ingresó un controlador se visualiza el controlador home por defecto
+      if(empty($url[0])) {
+        $fileController = 'controllers/home.php';
         require_once $fileController;
+        $controller = new Home();
         
-        $controller = new Login();
-        $controller->loadModel('login');
-        $controller->render();
-
-        return false;
+        error_log('APP::CONSTRUCT -> Cargando la vista home por defecto');
+        return false;      
       }
-      //Si url contiene parámetros validamos que exista el controlador 
-      $fileController = 'controllers/' . $url[0] . '.php';
-      
-      if (file_exists($fileController)) {
+
+      //Extrayendo el nombre del controlador
+      $fileController = 'controllers/' . $url[0] . '.php';      
+
+      if(file_exists($fileController)) {
+        //Si existe el archivo lo mandamos a llamar y cargamos el controlador
         require_once $fileController;
-        
         $controller = new $url[0];
-        $controller->loadModel($url[0]);
 
-        //comprobamos si existe un parámetro para validar un método o establecemos uno por defecto
+        error_log('APP::CONSTRUCT -> Cargando la vista');
+        //Si existe el método lo mandamos a llamar a través del controlador
         if (isset($url[1])) {
-          //comprobamos que el método llamado exista dentro de la clase
-          if (method_exists($controller, $url[1])) {
-            //comprobamos si existen más parámetros en la url
-            if (isset($url[2])) {
-              $nparam = count($url) - 2;
-              $params = [];
+          $controller->{$url[1]}();
 
-              for ($i=0; $i < $nparam; $i++) { 
-                array_push($params, $url[$i]+2);
-              }
-
-              $controller->{$url[1]}($params);
-            } else {
-              //si no hay más parámetros llamamos al método tal cual
-              $controller->{$url[1]}();
-            }            
-          } else {
-            //el método no existe
-            $controller = new Errores();
-            $controller->render();
-          }                    
-        } else {
-          //carga del método por defecto
-          $controller->render();
+          error_log('APP::CONSTRUCT -> Cargando el método');
         }        
-      } else {
-        //no existe el archivo
-        $controller = new Errores();
-        $controller->render();
+      } else {        
+        //Si no existe el archivo mandamos a llamar al controlador error                
+        $controller = new Errors();
+
+        error_log('APP::CONSTRUCT -> Cargando la vista error');
       }
-      
     }
 
   }

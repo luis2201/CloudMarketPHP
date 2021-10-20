@@ -1,6 +1,4 @@
-<?php
-
-  define('URL', 'http://localhost/CloudMarketPHP');
+<?php  
 
   define('HOST', 'localhost');
   define('DB', 'cloudmarket');
@@ -8,6 +6,7 @@
   define('PASSWORD', 'cloudmarket');
   define('CHARSET', 'utf8mb4');
 
+  define('URL', 'http://localhost/CloudMarketPHP/');
   define('LIBS', 'library/');
   define('VIEWS', 'views/');
   define('LAYERS', 'layers/');

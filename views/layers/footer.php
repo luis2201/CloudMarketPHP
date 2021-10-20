@@ -1,6 +1,5 @@
 
-
-  <footer class="border-top footer text-muted">
+  <footer class="border-top footer bg-dark text-light">
     <div class="text-center">
       <p>&copy;2021 - Cloud Solutions</p>
     </div>
@@ -18,11 +17,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   <!-- Site JS -->
   
-  <script src="<?php echo URL.'/'.RESOURCE; ?>js/Main.js"></script>
-  <script src="<?php echo URL.'/'.RESOURCE; ?>js/UploadImg.js"></script>
-  <script src="<?php echo URL.'/'.RESOURCE; ?>js/Usuarios.js"></script>
-
-  <?php $this->showMessagess(); ?>
+  <script src="<?php echo URL.RESOURCE; ?>js/Main.js"></script>
+  <script src="<?php echo URL.RESOURCE; ?>js/UploadImg.js"></script>
+  <script src="<?php echo URL.RESOURCE; ?>js/Usuarios.js"></script>  
   
 </body>
 </html>

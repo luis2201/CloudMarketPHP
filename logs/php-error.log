@@ -1,50 +1,30 @@
-[15-Oct-2021 09:47:10 America/New_York] Inicio de la ejecución
-[15-Oct-2021 09:47:10 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 09:47:10 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 09:47:10 America/New_York] Inicio de la ejecución
-[15-Oct-2021 09:47:10 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 09:47:10 America/New_York] Dashboard::render -> Carga el index del Dashboard
-[15-Oct-2021 09:47:25 America/New_York] Inicio de la ejecución
-[15-Oct-2021 09:47:25 America/New_York] Dashboard::render -> Carga el index del Dashboard
-[15-Oct-2021 09:47:25 America/New_York] Inicio de la ejecución
-[15-Oct-2021 09:47:25 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 09:47:25 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:05:40 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:05:40 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:05:40 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 10:05:40 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:05:40 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 10:05:40 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:05:44 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:05:44 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:05:44 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 10:05:44 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:05:44 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 10:05:44 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:05:47 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:05:47 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:05:47 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 10:05:47 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:05:47 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 10:05:47 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:06:45 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:06:45 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 10:06:45 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:06:48 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:06:48 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:06:48 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:06:48 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 10:06:48 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:06:56 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:06:56 America/New_York] Login::construct -> inicio de Login
-[15-Oct-2021 10:06:56 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 10:06:56 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:06:56 America/New_York] Dashboard::construct -> Inicio de Dashboard
-[15-Oct-2021 10:06:56 America/New_York] Conexión a BD exitosa
-[15-Oct-2021 10:06:56 America/New_York] Dashboard::render -> Carga el index del Dashboard
-[15-Oct-2021 10:07:06 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:07:06 America/New_York] Dashboard::construct -> Inicio de Dashboard
-[15-Oct-2021 10:07:06 America/New_York] Dashboard::render -> Carga el index del Dashboard
-[15-Oct-2021 10:07:06 America/New_York] Inicio de la ejecución
-[15-Oct-2021 10:07:06 America/New_York] APP::construct -> no hay controlador especificado
-[15-Oct-2021 10:07:06 America/New_York] Login::construct -> inicio de Login
+[19-Oct-2021 23:59:07 America/New_York] INDEX -> Inicio de la aplicación
+[19-Oct-2021 23:59:07 America/New_York] LIBS::VIEW -> Carga de la vista base
+[19-Oct-2021 23:59:07 America/New_York] LIBS::CONTROLLER -> Carga del controlador base
+[19-Oct-2021 23:59:07 America/New_York] CONTROLLERS::HOME -> Carga del controlador home
+[19-Oct-2021 23:59:07 America/New_York] APP::CONSTRUCT -> Cargando la vista
+[20-Oct-2021 00:01:37 America/New_York] INDEX -> Inicio de la aplicación
+[20-Oct-2021 00:01:37 America/New_York] LIBS::VIEW -> Carga de la vista base
+[20-Oct-2021 00:01:37 America/New_York] LIBS::CONTROLLER -> Carga del controlador base
+[20-Oct-2021 00:01:37 America/New_York] CONTROLLERS::HOME -> Carga del controlador home
+[20-Oct-2021 00:01:37 America/New_York] APP::CONSTRUCT -> Cargando la vista
+[20-Oct-2021 00:01:37 America/New_York] INDEX -> Inicio de la aplicación
+[20-Oct-2021 00:01:37 America/New_York] LIBS::VIEW -> Carga de la vista base
+[20-Oct-2021 00:01:37 America/New_York] LIBS::CONTROLLER -> Carga del controlador base
+[20-Oct-2021 00:01:37 America/New_York] CONTROLLERS::HOME -> Carga del controlador usuarios
+[20-Oct-2021 00:01:37 America/New_York] APP::CONSTRUCT -> Cargando la vista
+[20-Oct-2021 00:01:39 America/New_York] INDEX -> Inicio de la aplicación
+[20-Oct-2021 00:01:39 America/New_York] LIBS::VIEW -> Carga de la vista base
+[20-Oct-2021 00:01:39 America/New_York] LIBS::CONTROLLER -> Carga del controlador base
+[20-Oct-2021 00:01:39 America/New_York] CONTROLLERS::HOME -> Carga del controlador usuarios
+[20-Oct-2021 00:01:39 America/New_York] APP::CONSTRUCT -> Cargando la vista
+[20-Oct-2021 00:01:40 America/New_York] INDEX -> Inicio de la aplicación
+[20-Oct-2021 00:01:40 America/New_York] LIBS::VIEW -> Carga de la vista base
+[20-Oct-2021 00:01:40 America/New_York] LIBS::CONTROLLER -> Carga del controlador base
+[20-Oct-2021 00:01:40 America/New_York] CONTROLLERS::HOME -> Carga del controlador home
+[20-Oct-2021 00:01:40 America/New_York] APP::CONSTRUCT -> Cargando la vista
+[20-Oct-2021 00:01:40 America/New_York] INDEX -> Inicio de la aplicación
+[20-Oct-2021 00:01:40 America/New_York] LIBS::VIEW -> Carga de la vista base
+[20-Oct-2021 00:01:40 America/New_York] LIBS::CONTROLLER -> Carga del controlador base
+[20-Oct-2021 00:01:40 America/New_York] CONTROLLERS::HOME -> Carga del controlador usuarios
+[20-Oct-2021 00:01:40 America/New_York] APP::CONSTRUCT -> Cargando la vista

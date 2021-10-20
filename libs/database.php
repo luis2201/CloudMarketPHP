@@ -25,10 +25,11 @@ class Database{
             ];
             
             $pdo = new PDO($connection, $this->user, $this->password, $options);
-            error_log('Conexión a BD exitosa');
+            error_log('DATABASE::CONNECT -> Conexión a BD exitosa');
+
             return $pdo;
         }catch(PDOException $e){
-            error_log('Error connection: ' . $e->getMessage());
+            error_log('DATABASE::CONNECT -> Error connection: ' . $e->getMessage());
         }
     }
 

@@ -1,23 +1,13 @@
 <?php
 
-  include_once 'libs/interfacemodel.php';
-  
+   
   class Model {
 
-    function __construct() {
+    function __construct() {      
       $this->db = new Database();
+      error_log("LIBS::MODEL -> Carga del modelo base");
     }
-
-    function query($sql) {
-      return $this->db->connect()->query($sql);
-    }
-
-    function prepare($sql) {
-      return $this->db->connect()->prepare($sql);
-    }
-
-
-
+    
   }
 
 ?>
