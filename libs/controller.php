@@ -5,8 +5,6 @@
 
     function __construct() {            
       $this->view = new View();
-      
-      error_log("LIBS::CONTROLLER -> Carga del controlador base");
     }
 
     function loadModel($model) {
@@ -20,6 +18,52 @@
         $modelName = $model . 'Model';        
         $this->model = new $modelName();
       }
+    }
+
+    function existsPOST($params) {
+      foreach ($params as $param) {
+        if(!isset($_POST[$params])) {
+          error_log('CONTROLLER::existsPOST -> No existe el parámetro' . $params);
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    function existsGET($params) {
+      foreach ($params as $param) {
+        if(!isset($_GET[$params])) {
+          error_log('CONTROLLER::existsGET -> No existe el parámetro' . $params);
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    function getPOST($nameparam) {
+      return $_POST[$nameparam];
+    }
+
+    function getGET($nameparam) {
+      return $_GET[$nameparam];
+    }
+
+    function redirect($route, $messages) {
+      $data = [];
+      $params = [];
+
+      foreach ($messages as $key => $mesage) {
+        array_push($data, $key . '=' . $mesage);
+      }
+
+      $params = join('&', $data);
+      if ($params != '') {
+        $params = '?' . $params;
+      }
+
+      header('Location: ' . constant('URL') . $route . $params);
     }
     
   }

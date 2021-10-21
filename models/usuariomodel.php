@@ -10,7 +10,7 @@
     public function insert($params) {
       $query = 'CALL sp_usuario_insert(:nombres, :usuario, :contrasena, :idrol);';
       try {
-        $query = $this->db->prepare($query);
+        $query = $this->prepare($query);
         $query->execute([
           'nombres'     => $params['nombres'],
           'usuario'     => $params['usuario'],

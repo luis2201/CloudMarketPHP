@@ -11,12 +11,9 @@
   ini_set("error_log", "/var/www/html/CloudMarketPHP/logs/php-error.log");
   
   require_once 'libs/database.php';
-
-  /*
   require_once 'class/errormessages.php';
   require_once 'class/successmessages.php';  
-  require_once 'class/sessioncontroller.php';    
-  */
+  //require_once 'class/sessioncontroller.php';    
   
   require_once 'libs/controller.php';
   require_once 'libs/model.php';

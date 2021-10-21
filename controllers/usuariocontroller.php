@@ -4,8 +4,10 @@
     
     function __construct() {
       parent::__construct();
+    }
+
+    function render() {
       $this->view->render('usuarios/new');
-      error_log("CONTROLLERS::HOME -> Carga del controlador usuarios");
     }
 
     function register() {
