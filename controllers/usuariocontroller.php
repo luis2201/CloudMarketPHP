@@ -22,7 +22,7 @@
       ];
 
       if($this->model->insert($params)) {
-        echo "Usuario registrado satisfactoriamente";
+        $this->redirect('', ['success' => SuccessMessages::SUCCESS_NEW_USER]);
       } else {
         echo "Algo pasó";
       }
