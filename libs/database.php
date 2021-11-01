@@ -8,15 +8,15 @@ class Database{
     private $password;
     private $charset;
 
-    public function __construct(){
+    public function __construct() {
         $this->host = constant('HOST');
         $this->db = constant('DB');
         $this->user = constant('USER');
         $this->password = constant('PASSWORD');
         $this->charset = constant('CHARSET');
     }
-
-    function connect(){
+    
+    public function connect(){
         try{
             $connection = "mysql:host=" . $this->host . ";dbname=" . $this->db . ";charset=" . $this->charset;
             $options = [
@@ -24,7 +24,7 @@ class Database{
                 PDO::ATTR_EMULATE_PREPARES   => false,
             ];
             
-            $pdo = new PDO($connection, $this->user, $this->password, $options);
+            $pdo = new PDO($connection, constant('USER'), constant('PASSWORD'), $options);
             error_log('DATABASE::CONNECT -> Conexión a BD exitosa');
 
             return $pdo;

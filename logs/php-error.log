@@ -1,120 +1,64 @@
-[22-Oct-2021 00:04:39 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:04:39 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:04:39 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:04:39 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:04:39 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:04:39 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:04:39 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:04:39 America/New_York] USUARIOMODEL::INSERT -> ERROR! SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE cloudmarket.sp_usuario_insert does not exist
-[22-Oct-2021 00:05:11 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:05:11 America/New_York] APP::CONSTRUCT -> Cargando el controlador home por defecto
-[22-Oct-2021 00:05:11 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:07:56 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:07:56 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:07:56 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:07:56 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:07:56 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:07:56 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:07:56 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:07:56 America/New_York] USUARIOMODEL::INSERT -> ERROR! SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pusurio' in 'field list'
-[22-Oct-2021 00:08:23 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:08:23 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:08:23 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:08:23 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:08:23 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:08:23 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:08:23 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:08:23 America/New_York] USUARIOMODEL::INSERT -> ERROR! SQLSTATE[42S22]: Column not found: 1054 Unknown column 'prol' in 'field list'
-[22-Oct-2021 00:08:47 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:08:47 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:08:47 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:08:47 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:08:47 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:08:47 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:08:47 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:08:51 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:08:51 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:08:51 America/New_York] APP::CONSTRUCT -> Cargando homeController
-[22-Oct-2021 00:08:52 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:08:52 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:08:52 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:08:52 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:08:52 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:29:51 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:29:51 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:29:51 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:29:51 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:29:51 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:30:23 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:30:23 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:30:23 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:30:23 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:30:23 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:30:23 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:30:23 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:33:08 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:33:08 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:33:08 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:33:08 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:33:08 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:33:08 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:33:08 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:33:08 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:33:08 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:33:08 America/New_York] CONTROLLERS::ERROR -> Carga del controlador Error
-[22-Oct-2021 00:33:08 America/New_York] APP::CONSTRUCT -> Cargando el controlador error
-[22-Oct-2021 00:33:57 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:33:57 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:33:57 America/New_York] APP::CONSTRUCT -> Cargando homeController
-[22-Oct-2021 00:33:58 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:33:58 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:33:58 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:33:58 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:33:58 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:34:18 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:34:18 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:34:18 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:34:18 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:34:18 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:34:18 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:34:18 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:34:18 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:34:18 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:34:18 America/New_York] CONTROLLERS::ERROR -> Carga del controlador Error
-[22-Oct-2021 00:34:18 America/New_York] APP::CONSTRUCT -> Cargando el controlador error
-[22-Oct-2021 00:34:30 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:34:30 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:34:30 America/New_York] CONTROLLERS::ERROR -> Carga del controlador Error
-[22-Oct-2021 00:34:30 America/New_York] APP::CONSTRUCT -> Cargando el controlador error
-[22-Oct-2021 00:34:35 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:34:35 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:34:35 America/New_York] CONTROLLERS::ERROR -> Carga del controlador Error
-[22-Oct-2021 00:34:35 America/New_York] APP::CONSTRUCT -> Cargando el controlador error
-[22-Oct-2021 00:34:37 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:34:37 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:34:37 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:34:37 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:34:37 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:34:59 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:34:59 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:34:59 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:34:59 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:34:59 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:35:00 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:35:00 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:35:00 America/New_York] APP::CONSTRUCT -> Cargando homeController
-[22-Oct-2021 00:35:01 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:35:01 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:35:01 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:35:01 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:35:01 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:35:27 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:35:27 America/New_York] LIBS::VIEW -> Carga de la vista base
-[22-Oct-2021 00:35:27 America/New_York] LIBS::MODEL -> Carga del modelo base
-[22-Oct-2021 00:35:27 America/New_York] CONTROLLERS::HOME -> Carga del modelo usuarios
-[22-Oct-2021 00:35:27 America/New_York] APP::CONSTRUCT -> Cargando usuarioController
-[22-Oct-2021 00:35:27 America/New_York] APP::CONSTRUCT -> Método sin parámetros
-[22-Oct-2021 00:35:27 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[22-Oct-2021 00:35:27 America/New_York] INDEX -> Inicio de la aplicación
-[22-Oct-2021 00:35:27 America/New_York] APP::CONSTRUCT -> Cargando el controlador home por defecto
-[22-Oct-2021 00:35:27 America/New_York] LIBS::VIEW -> Carga de la vista base
+[01-Nov-2021 01:10:58 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:10:58 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:11:01 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:11:01 America/New_York] PHP Notice:  Undefined variable: questio in /var/www/html/CloudMarketPHP/controllers/usuarioController.php on line 147
+[01-Nov-2021 01:11:01 America/New_York] 
+[01-Nov-2021 01:11:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:11:11 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:11:11 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:11:13 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:11:13 America/New_York] <script>
+      $.confirm({
+        icon: 'fas fa-ban',
+        theme: 'modern',
+        type: 'red',
+        animation: 'scale',
+        title: '¡Advertencia!',
+        content: 'Desea eliminar el registro? Los cambios no se desharán',
+        buttons: {
+          confirm: function () { 
+            return true;
+          },
+          cancel: function () {
+
+          },
+        }
+      });
+    </script>
+[01-Nov-2021 01:11:13 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:13:46 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:13:46 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:13:48 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:13:48 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:13:48 America/New_York] <script>
+      $.confirm({
+        icon: 'fas fa-ban',
+        theme: 'modern',
+        type: 'red',
+        animation: 'scale',
+        title: '¡Advertencia!',
+        content: 'Desea eliminar el registro? Los cambios no se desharán',
+        buttons: {
+          confirm: function () { 1
+[01-Nov-2021 01:13:48 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:14:07 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:14:07 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:14:12 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:14:12 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:14:12 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:14:12 America/New_York] USUARIOMODEL::INSERT => Registro insertado en la BD
+[01-Nov-2021 01:14:12 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:14:15 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:14:15 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:14:23 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:14:23 America/New_York] PHP Fatal error:  Uncaught Error: Object of class UsuarioModel could not be converted to string in /var/www/html/CloudMarketPHP/controllers/usuarioController.php:138
+Stack trace:
+#0 /var/www/html/CloudMarketPHP/libs/routes.php(44): UsuarioController->delete()
+#1 /var/www/html/CloudMarketPHP/index.php(23): Routes->__construct()
+#2 {main}
+  thrown in /var/www/html/CloudMarketPHP/controllers/usuarioController.php on line 138
+[01-Nov-2021 01:24:26 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:24:26 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:24:28 America/New_York] Inicio de la ejecución
+[01-Nov-2021 01:24:28 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[01-Nov-2021 01:24:28 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
