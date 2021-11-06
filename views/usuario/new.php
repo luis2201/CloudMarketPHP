@@ -26,12 +26,12 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <form class="frmAction" action="<?php echo constant('URL'); ?>usuario/register" method="POST" enctype="multipart/form-data">
+                  <form class="frmAction" action="<?php echo constant('URL'); ?>usuario/register" method="POST" data-form="insert" enctype="multipart/form-data" autocomplete="off">
                     <div class="row">                      
                       <div class="col">
                         <div class="row mb-3">
                           <div class="col">
-                            <label for="nombres" class="form-label"><strong>Nombres y Apellidos</strong></label>
+                            <label for="nombres" class="form-label"><strong>Apellidos y Nombres</strong></label>
                             <input type="text" id="nombres" name="nombres" class="form-control" onkeypress="HideMessages(this);" value="<?php //echo (isset($_POST['nombres'])) ? $_POST['nombres'] : "" ; ?>" autofocus>
                             <span id="mnombres" class="text-danger"></span>
                           </div>
@@ -53,7 +53,8 @@
                               ?>
                                 <option value="<?php echo $obj->encryption($row->idrol); ?>"><?php echo $row->rol; ?></option>
                               <?php } ?>
-                            </select>                            
+                            </select>
+                            <span id="midrol" class="text-danger"></span> 
                           </div>
                         </div>
                         <div class="row mb-3">
@@ -66,6 +67,7 @@
                         </div>
                       </div>
                     </div>
+                    <div id="RespuestaForm"></div>
                   </form>
                 </div>
               </div>

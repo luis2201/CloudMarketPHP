@@ -108,8 +108,39 @@
                   type: 'blue',
                   animation: 'scale',
                   title: '¡Éxito!',
-                  content: '".$message."'
-              });                         
+                  content: '".$message."',
+                  buttons: {
+                    buttonOK: {
+                        text: 'Aceptar',
+                        btnClass: 'btn-blue',
+                        action: function(){
+                          location.reload();
+                        }
+                    },
+                  }
+                });          
+              </script>";
+    }
+
+    function deleteMessage($message) {
+      return "<script>
+                $.alert({
+                  icon: 'fas fa-thumbs-up',
+                  theme: 'modern',
+                  type: 'blue',
+                  animation: 'scale',
+                  title: '¡Éxito!',
+                  content: '".$message."',
+                  buttons: {
+                    buttonOK: {
+                        text: 'Aceptar',
+                        btnClass: 'btn-blue',
+                        action: function(){
+                          
+                        }
+                    },
+                  }
+                });          
               </script>";
     }
 
@@ -122,6 +153,15 @@
                   animation: 'scale',
                   title: '¡Error!',
                   content: '".$message."',
+                  buttons: {
+                    buttonOK: {
+                        text: 'Aceptar',
+                        btnClass: 'btn-orange',
+                        action: function(){
+                        
+                        }
+                    },
+                  }
                 });                
               </script>";
     }
@@ -135,6 +175,15 @@
                   animation: 'scale',
                   title: '¡Advertencia!',
                   content: '".$message."',
+                  buttons: {
+                    buttonOK: {
+                        text: 'Aceptar',
+                        btnClass: 'btn-red',
+                        action: function(){
+                          
+                        }
+                    },
+                  }
                 });
               </script>";
     }

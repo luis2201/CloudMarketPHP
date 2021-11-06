@@ -42,19 +42,19 @@
         ];  
 
         if($this->model->insert($params)) {
-          $this->view->mensaje = $this->successMessage('Usuario registrado satisfactoriamente');            
+          $mensaje = $this->successMessage('Usuario registrado satisfactoriamente');
         } else {
-          $this->view->mensaje = $this->errorMessage('Ocurrió un error al intentar guardar el registro');            
+          $mensaje = $this->errorMessage('Ocurrió un error al intentar guardar el registro');
         }        
 
       } else {
-        $this->view->mensaje = $this->errorMessage('El usuario ya existe. Ingrese otro');        
+        $mensaje = $this->errorMessage('El usuario ya existe. Ingrese otro');  
       }
-      
+  
       $result = $this->model->rolesAll();
-
       $this->view->roles = $result;
-      $this->view->render('usuario/new');
+
+      echo $mensaje;
     }
 
     function view($idusuario = null) { 
@@ -96,13 +96,13 @@
         ];
 
         if($this->model->update($params)) {
-          $this->view->mensaje = $this->successMessage('Datos del usuario actualizados satisfactoriamente');            
+          $mensaje = $this->successMessage('Datos del usuario actualizados satisfactoriamente');            
         } else {
-          $this->view->mensaje = $this->errorMessage('Ocurrió un error al intentar actualizar el registro');            
+          $mensaje = $this->errorMessage('Ocurrió un error al intentar actualizar el registro');            
         }
         
       } else {
-        $this->view->mensaje = $this->errorMessage('El usuario ya existe. Ingrese otro');        
+        $mensaje = $this->errorMessage('El usuario ya existe. Ingrese otro');        
       }
 
       $result = new UsuarioDAO();
@@ -113,7 +113,9 @@
 
       $this->view->usuario = $result;    
       $this->view->roles = $this->model->rolesAll();      
-      $this->view->render('usuario/edit');
+      //$this->view->render('usuario/edit');
+    
+      echo $mensaje;
     }
 
     function delete($idusuario = null) {            
@@ -126,14 +128,12 @@
       ];             
       
       if($this->model->delete($params)) {
-        $this->view->mensaje = $this->successMessage('Usuario eliminado satisfactoriamente');            
+        $mensaje = $this->deleteMessage('Usuario eliminado satisfactoriamente');
       } else {
-        $this->view->mensaje = $this->errorMessage('Ocurrió un error al intentar eliminar el registro');            
+        $mensaje = $this->errorMessage('Ocurrió un error al intentar eliminar el registro');
       }
-
-      $result = $this->model->selectAll();
-      $this->view->usuarios = $result;
-      $this->view->render('usuario/index');      
+      
+      echo $mensaje;  
     }
 
     

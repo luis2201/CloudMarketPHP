@@ -7,50 +7,53 @@ jQuery.validator.addMethod("alphanumeric", function (value, element) {
 }, "Alfanumérico");
 
 var validator = $('.frmAction').validate({
-  onfocusout: false,
-  onkeyup: false,
-  onclick: false,
-  focusInvalid: true,
-  errorClass: "form-error",
+  onfocusout      : false,
+  onkeyup         : false,
+  onclick         : false,
+  focusInvalid    : true,
+  errorClass      : "form-error",
   rules: {
     nombres: {
-      required: true,
-      letter: true,
-      maxlength: 255
+      required    : true,
+      letter      : true,
+      maxlength   : 255
     },
     usuario: {
-      required: true,
+      required    : true,
       alphanumeric: true,
-      minlength: 6,
-      maxlength: 25
+      minlength   : 6,
+      maxlength   : 25
     },
     idrol: {
-      required: true
+      required    : true
     }
   },
   messages: {
     nombres: {
-      required: "Ingrese nombres",
-      letter: "El campo nombres es de solo texto",
-      maxlength: "El campo nombres admite 255 caracteres"
+      required    : "Ingrese apellidos y nombres",
+      letter      : "El campo nombres es de solo texto",
+      maxlength   : "El campo nombres admite 255 caracteres"
     },
     usuario: {
-      required: "<i class='fas fa-exclamation-circle'></i> Ingrese su usuario",
+      required    : "Ingrese su usuario",
       alphanumeric: "El campo usuario no admite espacios, tildes, ni caracteres especiales",
-      minlength: "El usuario debe ser una cadena de al menos 6 caracteres",
-      maxlength: "El usuario debe ser un cadena no mayor a 25 caracteres"
+      minlength   : "El usuario debe ser una cadena de al menos 6 caracteres",
+      maxlength   : "El usuario debe ser un cadena no mayor a 25 caracteres"
     },
     idrol: {
-      required: "<i class='fas fa-exclamation-circle'></i> Seleccione el rol del usuario"
+      required: "Seleccione el rol del usuario"
     }
   },
   errorPlacement: function (error, element) {
     if (element.attr("name") == "nombres") {
-      $("#mnombres").text($(error).text());
+      const div = document.querySelector("#mnombres");
+      div.innerHTML = "<i class='fas fa-exclamation-triangle'></i> " + $(error).text();
     } else if (element.attr("name") == "usuario") {
-      $("#musuario").text($(error).text());
-    } else if (element.attr("name") == "rol") {
-      $("#mrol").text($(error).text());
+      const div = document.querySelector("#musuario");
+      div.innerHTML = "<i class='fas fa-exclamation-triangle'></i> " + $(error).text();
+    } else if (element.attr("name") == "idrol") {
+      const div = document.querySelector("#midrol");
+      div.innerHTML = "<i class='fas fa-exclamation-triangle'></i> " + $(error).text();
     }
   }
 });
@@ -76,7 +79,7 @@ function HideMessages(input) {
 }
 
 $('#btnCancelar').click(function () {
-  //$('.frmAction')[0].reset();
+  $('.frmAction')[0].reset();
   //$('img').attr('src', '/CloudMarketPHP/Resource/img/user-default.png'); 
-  location.reload();
+  //location.reload();
 });

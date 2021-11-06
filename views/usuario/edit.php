@@ -15,7 +15,7 @@
         <div class="container" style="height: 100%;">
           <div class="card mt-3 mx-auto mb-4 border-0">
             <div class="card-header border-secondary">
-              <h5 class="ml-2"><strong>Actulizar datos del Usuario</strong></h5>
+              <h5 class="ml-2"><strong>Actualizar datos del Usuario</strong></h5>
             </div>
             <div class="card-body">
               <div class="card col-md-10 mx-auto border-primary">
@@ -25,7 +25,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <form class="frmAction" action="<?php echo constant('URL'); ?>usuario/update/" method="POST" enctype="multipart/form-data">
+                  <form class="frmAction" action="<?php echo constant('URL'); ?>usuario/update/" method="POST" data-form="update" enctype="multipart/form-data" autocomplete="off">
                     <div class="row">                      
                       <div class="col">
                         <div class="row mb-3">
@@ -65,6 +65,7 @@
                         </div>
                       </div>
                     </div>
+                    <div id="RespuestaForm"></div>
                   </form>
                 </div>
               </div>

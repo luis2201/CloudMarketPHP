@@ -37,7 +37,7 @@
                         <th scope="col">Acción</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tbody-usuario">
                       <?php
                       require_once 'controllers/usuarioController.php';
                       $obj = new UsuarioController();
@@ -46,7 +46,7 @@
                         $usuario = new UsuarioDAO();
                         $usuario = $row;
                       ?>
-                      <tr>
+                      <tr id="fila-<?php echo $obj->encryption($usuario->idusuario); ?>">
                         <th scope="row" class="text-center"></th>
                         <td><?php echo $usuario->nombres; 
                             ?></td>
@@ -57,10 +57,8 @@
                         <td class="text-center"><?php echo $usuario->estado ? '<span class="badge bg-success">ACTIVO</span>' : '<span class="badge bg-danger">INACTIVO</span>'; 
                                                 ?></td>
                         <td class="text-center">
-                          <a href="<?php echo URL.'usuario/view/'.$obj->encryption($usuario->idusuario); 
-                                    ?>"><i class="fas fa-edit text-dark"></i></a>
-                          <a href="<?php echo URL.'usuario/delete/'.$obj->encryption($usuario->idusuario);
-                                    ?>"><i class="fas fa-trash-alt text-danger"></i></a>
+                          <a class="btn btn-sm btn-link" href="<?php echo URL.'usuario/view/'.$obj->encryption($usuario->idusuario); ?>"><i class="fas fa-edit text-dark"></i></a>
+                          <button type="button" class="btn btn-sm btn-link btnEliminar" data-usuario="<?php echo $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-trash-alt text-danger"></i></button>
                         </td>
                       </tr>
                       <?php
@@ -68,6 +66,7 @@
                       ?>
                     </tbody>
                   </table>
+                  <div id="RespuestaForm"></div>
                 </div>
               </div>
 
