@@ -124,13 +124,31 @@
       $idusuario      = $this->decryption($idusuario);
 
       $params = [
-        'idusuario'     => $idusuario                 
+        'idusuario'   => $idusuario                 
       ];             
       
       if($this->model->delete($params)) {
-        $mensaje = $this->deleteMessage('Usuario eliminado satisfactoriamente');
+        $mensaje = $this->successMessage('Usuario eliminado satisfactoriamente');
       } else {
         $mensaje = $this->errorMessage('Ocurrió un error al intentar eliminar el registro');
+      }
+      
+      echo $mensaje;  
+    }
+
+    function change($idusuario = null) {            
+      $idusuario      = $this->limpiarCadena($idusuario[0]);      
+
+      $idusuario      = $this->decryption($idusuario);
+
+      $params = [
+        'idusuario'   => $idusuario                 
+      ];             
+      
+      if($this->model->change($params)) {
+        $mensaje = $this->successMessage('El estado del usuario fue actualizado satisfactoriamente');
+      } else {
+        $mensaje = $this->errorMessage('Ocurrió un error al intentar actualizar el registro');
       }
       
       echo $mensaje;  

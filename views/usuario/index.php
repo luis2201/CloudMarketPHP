@@ -42,27 +42,24 @@
                       require_once 'controllers/usuarioController.php';
                       $obj = new UsuarioController();
 
-                      foreach ($this->usuarios as $row) { 
+                      foreach ($this->usuarios as $row) {
                         $usuario = new UsuarioDAO();
                         $usuario = $row;
                       ?>
-                      <tr id="fila-<?php echo $obj->encryption($usuario->idusuario); ?>">
-                        <th scope="row" class="text-center"></th>
-                        <td><?php echo $usuario->nombres; 
-                            ?></td>
-                        <td class="text-center"><?php echo $usuario->usuario; 
-                                                ?></td>
-                        <td class="text-center"><?php echo $usuario->rol; 
-                                                ?></td>
-                        <td class="text-center"><?php echo $usuario->estado ? '<span class="badge bg-success">ACTIVO</span>' : '<span class="badge bg-danger">INACTIVO</span>'; 
-                                                ?></td>
-                        <td class="text-center">
-                          <a class="btn btn-sm btn-link" href="<?php echo URL.'usuario/view/'.$obj->encryption($usuario->idusuario); ?>"><i class="fas fa-edit text-dark"></i></a>
-                          <button type="button" class="btn btn-sm btn-link btnEliminar" data-usuario="<?php echo $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-trash-alt text-danger"></i></button>
-                        </td>
-                      </tr>
+                        <tr id="fila-<?php echo $obj->encryption($usuario->idusuario); ?>">
+                          <th scope="row" class="text-center"></th>
+                          <td><?php echo $usuario->nombres; ?></td>
+                          <td class="text-center"><?php echo $usuario->usuario; ?></td>
+                          <td class="text-center"><?php echo $usuario->rol; ?></td>
+                          <td class="text-center"><?php echo $usuario->estado ? '<span class="badge bg-success">ACTIVO</span>' : '<span class="badge bg-danger">INACTIVO</span>'; ?></td>
+                          <td class="text-center">
+                            <a class="btn btn-sm btn-link" href="<?php echo URL . 'usuario/view/' . $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-edit text-dark"></i></a>
+                            <button type="button" class="btn btn-sm btn-link btnEliminar" data-usuario="<?php echo $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-trash-alt text-danger"></i></button>
+                            <button type="button" class="btn btn-sm btn-link btnEstado" data-usuario="<?php echo $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-retweet text-info"></i></button>
+                          </td>
+                        </tr>
                       <?php
-                      } 
+                      }
                       ?>
                     </tbody>
                   </table>
@@ -81,6 +78,7 @@
 
   <?php require_once 'views/layers/footer.php'; ?>
 </body>
+
 </html>
 
-<?php if($this->mensaje != "") echo $this->mensaje; ?>
+<?php if ($this->mensaje != "") echo $this->mensaje; ?>

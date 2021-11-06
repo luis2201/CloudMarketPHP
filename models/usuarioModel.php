@@ -157,6 +157,19 @@
       }
     }
 
+    public function change($params) {
+      try{
+        $query = $this->prepare('CALL sp_usuario_change(:idusuario)');
+        $query->execute([
+          'idusuario'   => $params['idusuario']          
+        ]);
+
+        return true;
+      }catch(PDOException $e){
+          return false;
+      }
+    }
+
   }
 
 ?>

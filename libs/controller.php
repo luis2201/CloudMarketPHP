@@ -122,28 +122,6 @@
               </script>";
     }
 
-    function deleteMessage($message) {
-      return "<script>
-                $.alert({
-                  icon: 'fas fa-thumbs-up',
-                  theme: 'modern',
-                  type: 'blue',
-                  animation: 'scale',
-                  title: '¡Éxito!',
-                  content: '".$message."',
-                  buttons: {
-                    buttonOK: {
-                        text: 'Aceptar',
-                        btnClass: 'btn-blue',
-                        action: function(){
-                          
-                        }
-                    },
-                  }
-                });          
-              </script>";
-    }
-
     function warningMessage($message) {
       return "<script>
                 $.alert({
@@ -151,7 +129,7 @@
                   theme: 'modern',
                   type: 'orange',
                   animation: 'scale',
-                  title: '¡Error!',
+                  title: '¡Advertencia!',
                   content: '".$message."',
                   buttons: {
                     buttonOK: {
@@ -173,7 +151,7 @@
                   theme: 'modern',
                   type: 'red',
                   animation: 'scale',
-                  title: '¡Advertencia!',
+                  title: 'Error!',
                   content: '".$message."',
                   buttons: {
                     buttonOK: {

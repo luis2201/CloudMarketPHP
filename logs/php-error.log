@@ -1,240 +1,117 @@
-[06-Nov-2021 04:06:42 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:06:42 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:42 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:42 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:43 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:06:43 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:43 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:49 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:06:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:50 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:06:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:06:56 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:06:56 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:07:02 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:07:02 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:07:02 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:07:05 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:07:05 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:07:35 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:07:35 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:07:37 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:07:37 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:14:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:14:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:14:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:14:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:14:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:14:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:14:34 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:14:34 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:14:34 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:14:34 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:14:34 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:14:34 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:15:35 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:15:35 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:15:35 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:15:35 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:15:35 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:15:35 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:15:36 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:15:36 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:19:36 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:19:36 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:20:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:20:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:20:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:20:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:22:17 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:22:17 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:30 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:30 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:30 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:30 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:30 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:30 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:31 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:51 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:51 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:51 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:51 America/New_York] USUARIOMODEL::INSERT => Registro insertado en la BD
-[06-Nov-2021 04:23:51 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:53 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:53 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:23:55 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:23:55 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:26 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:26 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:26 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:31 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:32 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:32 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:32 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:34 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:34 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:42 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:42 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:42 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:47 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:47 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:47 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:47 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:48 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:48 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:48 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:24:50 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:24:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:04 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:25:04 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:04 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:11 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:25:11 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:25:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:35 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:25:35 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:55 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:25:55 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:25:55 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:01 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:04 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:04 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:04 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:05 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:05 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:11 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:11 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:12 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:14 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:14 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:43 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:43 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:26:44 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:26:44 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:29:31 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:29:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:30:26 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:30:26 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:31:49 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:31:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:09 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:32:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:11 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:32:11 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:23 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:32:23 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:23 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:23 America/New_York] USUARIOMODEL::INSERT => Registro insertado en la BD
-[06-Nov-2021 04:32:23 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:24 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:32:24 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:32:26 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:32:26 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:38 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:33:38 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:45 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:33:45 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:53 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:33:53 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:53 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:53 America/New_York] USUARIOMODEL::INSERT => Registro insertado en la BD
-[06-Nov-2021 04:33:53 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:54 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:33:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:33:56 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:33:56 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:01 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:34:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:06 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:34:06 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:06 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:06 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:07 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:34:07 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:07 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:34:09 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:34:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:35:20 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:35:20 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:37:54 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:37:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:38:39 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:38:39 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:38:39 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:38:39 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:11 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:11 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:14 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:14 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:16 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:16 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:22 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:22 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:22 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:52 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:52 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:52 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:52 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:54 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:39:56 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:39:56 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:21 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:21 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:33 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:33 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:37 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:37 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:37 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:37 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:38 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:38 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:38 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:40 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:40 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:47 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:47 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:41:51 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:41:51 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:42:09 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:42:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:42:09 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:42:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:42:09 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:42:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:42:10 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:42:10 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:42:19 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:42:19 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:42:26 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:42:26 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:44:26 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:44:27 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:44:27 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:44:29 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:44:40 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:44:40 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:44:40 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:44:43 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:44:43 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:46:10 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:46:10 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:46:14 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:46:14 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:46:14 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
-[06-Nov-2021 04:46:16 America/New_York] Inicio de la ejecución
-[06-Nov-2021 04:46:16 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:07:43 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:07:43 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:09:02 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:09:02 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:11:45 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:11:45 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:11:45 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:11:50 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:11:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:11:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:11:54 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:11:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:16:49 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:16:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:16:50 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:16:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:16:53 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:16:53 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:18:28 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:18:28 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:18:54 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:18:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:19:09 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:19:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:19:24 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:19:24 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:17 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:17 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:17 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:23 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:23 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:25 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:25 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:25 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:28 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:28 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:28 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:28 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:29 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:29 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:29 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:30 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:30 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:31 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:31 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:37 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:37 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:37 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:20:41 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:20:41 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:29:52 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:29:52 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:00 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:00 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:05 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:05 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:07 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:07 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:09 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:09 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:10 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:10 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:13 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:13 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:14 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:14 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:17 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:17 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:18 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:18 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:54 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:30:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:30:54 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:31:02 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:31:02 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:32:42 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:32:42 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:32:43 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:32:43 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:32:53 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:32:53 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:37:48 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:37:48 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:37:48 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:37:48 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:37:49 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:37:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:37:49 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:37:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:37:50 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:37:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:00 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:00 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:00 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:00 America/New_York] USUARIOMODEL::INSERT => Registro insertado en la BD
+[06-Nov-2021 14:38:00 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:01 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:01 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:02 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:02 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:04 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:04 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:04 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:49 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:49 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:50 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:50 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:51 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:51 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:38:59 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:38:59 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
+[06-Nov-2021 14:39:00 America/New_York] Inicio de la ejecución
+[06-Nov-2021 14:39:00 America/New_York] DATABASE::CONNECT -> Conexión a BD exitosa
