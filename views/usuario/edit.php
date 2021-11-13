@@ -36,12 +36,12 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <div class="col-md-6">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <label for="usuario" class="form-label"><strong>Usuario</strong></label>
                             <input type="text" id="usuario" name="usuario" class="form-control" onkeypress="HideMessages(this);" value="<?php echo $this->usuario->usuario; ?>">
                             <span id="musuario" class="text-danger"></span>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <label for="idrol" class="form-label"><strong>Rol de Usuario</strong></label>
                             <select id="idrol" name="idrol" class="form-select" onchange="HideMessages(this);">
                             <?php 
@@ -56,10 +56,10 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <div class="col-md-6 d-grid">
+                          <div class="col-lg-6 col-md-12 col-sm-12 d-grid">
                             <button type="submit" class="btn btn-block btn-primary">Guardar</button>
                           </div>
-                          <div class="col-md-6 d-grid">
+                          <div class="col-lg-6 col-md-12 col-sm-12 d-grid">
                             <button type="button" id="btnCancelar" name="btnCancelar" class="btn btn-secondary">Cancelar</button>
                           </div>
                         </div>
@@ -69,6 +69,8 @@
                   </form>
                 </div>
               </div>
+
+              <a href="<?php echo URL; ?>usuario" class="btn-flotante"><i class="fas fa-angle-left"></i> Volver</a>
             </div>
           </div>
         </div>
@@ -83,5 +85,3 @@
 </body>
 
 </html>
-
-<?php echo $this->mensaje; ?>

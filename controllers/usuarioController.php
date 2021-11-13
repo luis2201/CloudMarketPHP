@@ -63,8 +63,20 @@
 
       $idusuario = $this->decryption($idusuario);
       
-      $result = $this->model->selectId($idusuario);
+      $result = $this->model->view($idusuario);
+    
+      $this->view->usuario = $result;
+      $this->view->render('usuario/view');
+    }
 
+    function edit($idusuario = null) { 
+      $idusuario = $this->limpiarCadena($idusuario[0]);
+      $idusuario = $this->limpiarCadena($idusuario);
+
+      $idusuario = $this->decryption($idusuario);
+      
+      $result = $this->model->view($idusuario);
+      
       session_start();
       $_SESSION['idusuario'] = $this->encryption($result->idusuario);
     

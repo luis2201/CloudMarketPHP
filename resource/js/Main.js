@@ -1,16 +1,23 @@
 
 const table = $('#tbLista').DataTable({
+  dom: 'Bfrtip',
+  buttons: [
+      'copyHtml5',
+      'excelHtml5',
+      'csvHtml5',
+      'pdfHtml5'
+  ],
   destroy: true,
   select: true,
   "language": {
     "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
   },
 });
-table.on('order.dt search.dt', function () {
+/*table.on('order.dt search.dt', function () {
   table.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
     cell.innerHTML = i + 1;
   });
-}).draw();
+}).draw();*/
 
 $('.frmAction').submit(function(event){	
 	event.preventDefault();
@@ -124,14 +131,14 @@ estado.forEach(btn => {
     $.confirm({
       icon      : 'fas fa-question-circle',
       theme     : 'modern',
-      type      : 'orange',
+      type      : 'blue',
       animation : 'scale',
       title     : '¿Cambiar estado del registro?',
       content   : 'Podrá cambiar el estado del registro nuevamente',
       buttons   : {
         confirm: {
           text    : 'Confirmar',
-          btnClass: 'btn-orange',
+          btnClass: 'btn-blue',
           action: function () {
             httpRequest("http://localhost/CloudMarketPHP/usuario/change/" + usuario, function () {
 

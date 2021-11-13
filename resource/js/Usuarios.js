@@ -62,17 +62,17 @@ function HideMessages(input) {
   element = document.getElementById(input.name);
   switch (input.name) {
     case "nombres":
-      element.classList.remove("form-error");
+      //element.classList.remove("form-error");
       document.getElementById("mnombres").innerHTML = "";
       break;
 
     case "usuario":
-      element.classList.remove("form-error");
+      //element.classList.remove("form-error");
       document.getElementById("musuario").innerHTML = "";
       break;
 
     case "idrol":
-      element.classList.remove("form-error");
+      //element.classList.remove("form-error");
       document.getElementById("midrol").innerHTML = "";
       break;
   }

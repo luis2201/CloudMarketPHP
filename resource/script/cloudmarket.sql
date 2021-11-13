@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 01-11-2021 a las 18:15:54
+-- Tiempo de generación: 12-11-2021 a las 19:51:56
 -- Versión del servidor: 10.5.12-MariaDB-0ubuntu0.21.04.1
 -- Versión de PHP: 7.4.16
 
@@ -26,6 +26,12 @@ DELIMITER $$
 --
 -- Procedimientos
 --
+CREATE DEFINER=`cloudmarket`@`localhost` PROCEDURE `sp_empresa_view` ()  NO SQL
+BEGIN
+	SELECT *
+    FROM empresa;
+END$$
+
 CREATE DEFINER=`cloudmarket`@`localhost` PROCEDURE `sp_login` (IN `pusuario` VARCHAR(25))  BEGIN
 	SELECT * FROM usuarios WHERE usuario = pusuario;
 END$$
@@ -47,6 +53,19 @@ BEGIN
     FROM usuarios
     WHERE usuario = pusuario
     AND idusuario <> pidusuario;
+END$$
+
+CREATE DEFINER=`cloudmarket`@`localhost` PROCEDURE `sp_usuario_change` (IN `pidusuario` INT)  NO SQL
+BEGIN
+	SELECT @estado:=estado FROM usuarios WHERE idusuario = pidusuario;
+    
+    IF @estado = 1 THEN
+    	SET @estado = 0;
+    ELSE
+    	SET @estado = 1;
+    END IF;
+    
+    UPDATE usuarios set estado = @estado WHERE idusuario = pidusuario;
 END$$
 
 CREATE DEFINER=`cloudmarket`@`localhost` PROCEDURE `sp_usuario_delete` (IN `pidusuario` INT)  NO SQL
@@ -90,6 +109,13 @@ BEGIN
     WHERE idusuario = pidusuario;    
 END$$
 
+CREATE DEFINER=`cloudmarket`@`localhost` PROCEDURE `sp_usuario_view` (IN `pidusuario` INT)  NO SQL
+BEGIN
+	SELECT U.idusuario, U.nombres, U.usuario, R.rol, U.foto, U.estado
+	FROM usuarios U INNER JOIN roles R ON U.idrol = R.idrol
+	WHERE idusuario = pidusuario;
+END$$
+
 DELIMITER ;
 
 -- --------------------------------------------------------
@@ -112,6 +138,30 @@ INSERT INTO `categorias` (`idcategoria`, `categoria`, `estado`) VALUES
 (2, 'GASEOSAS', 1),
 (3, 'LACTEOS', 1),
 (4, 'GRANOS', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `empresa`
+--
+
+CREATE TABLE `empresa` (
+  `rucempresa` varchar(13) NOT NULL,
+  `logo` varchar(255) NOT NULL DEFAULT 'user-default.png',
+  `razonsocial` varchar(500) NOT NULL,
+  `actividadeconomica` varchar(500) NOT NULL,
+  `ciudad` varchar(50) NOT NULL,
+  `direccion` varchar(500) NOT NULL,
+  `telefono` varchar(25) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `empresa`
+--
+
+INSERT INTO `empresa` (`rucempresa`, `logo`, `razonsocial`, `actividadeconomica`, `ciudad`, `direccion`, `telefono`, `email`) VALUES
+('1310687114001', 'user-default.png', 'Cloud Solutions', 'VENTA AL POR MENOR DE LAPTOPS, PARTES Y PIEZAS DE COMPUTADORAS', 'Portoviejo', 'Av América y San Rafael', '0985946500', 'info@cloudsolutions.com');
 
 -- --------------------------------------------------------
 
@@ -151,10 +201,10 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`idrol`, `rol`, `estado`) VALUES
-(1, 'ADMIN', 1),
-(2, 'CAJA', 1),
-(3, 'BODEGA', 1),
-(4, 'USUARIO', 1);
+(1, 'Admin', 1),
+(2, 'Caja', 1),
+(3, 'Bodega', 1),
+(4, 'Usuario', 1);
 
 -- --------------------------------------------------------
 
@@ -173,6 +223,19 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`idusuario`, `nombres`, `usuario`, `contrasena`, `idrol`, `foto`, `estado`) VALUES
+(323, 'Luis Daniel Pincay Toala', 'LPINCAY', 'ME54bkdYZ0xGM21rOHg4dkJNOUNyUT09', 1, 'user-default.png', 1),
+(347, 'Zambrano Zapata Selena Mercedes', 'ZAZASEMER', 'b3A0aWZIZHM2VFdCN3dWcS9vV0lsQT09', 4, 'user-default.png', 1),
+(350, 'Navarrete Sornoza Julio César', 'JCNAVASORNOZA', 'NUNIOWZ3RFBJVWlrMXE1d0R5Q0dKZz09', 4, 'user-default.png', 1),
+(360, 'Saltos Rivas Hipatia Lucrecia', 'HIPATIASR', 'Sk9DQlV1RGhNRjJuVnRFUDBLbytXdz09', 2, 'user-default.png', 0),
+(361, 'Anchundia Castillo Leonardo Gregorio', 'ANCHUDIALG', 'T21HRmVCWm9WTTFORmx2UXY4bXRmdz09', 3, 'user-default.png', 0),
+(362, 'Soledispa Arcentales Aracely Stefanía', 'ARACELYSS', 'WG5QN1oxZ2FqMTZEUUJ1bVdwbkdEZz09', 2, 'user-default.png', 1),
+(364, 'Parrales Mendoza Juana Guillermina', 'GUILLERMINA', 'eU5pRHBYYkNpMkdGZVJScFZRKzFBUT09', 2, 'user-default.png', 1);
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -181,6 +244,12 @@ CREATE TABLE `usuarios` (
 --
 ALTER TABLE `categorias`
   ADD PRIMARY KEY (`idcategoria`);
+
+--
+-- Indices de la tabla `empresa`
+--
+ALTER TABLE `empresa`
+  ADD PRIMARY KEY (`rucempresa`);
 
 --
 -- Indices de la tabla `productos`
@@ -228,7 +297,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=311;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=365;
 
 --
 -- Restricciones para tablas volcadas

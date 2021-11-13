@@ -6,18 +6,55 @@
 
   class UsuarioModel extends Model {
 
-    public $idusuario;
-    public $nombres;
-    public $usuario;
-    public $contrasena;
-    public $idrol;
-    public $foto;
-    public $estado;
-
     public function __construct() {
       parent::__construct();
     }
+
+    public function selectAll() {
+      try {
+        $query = $this->query('CALL sp_usuario_selectAll()');
+
+        $items = [];
+        while($row = $query->fetch()){
+          $item = new UsuarioRolDAO();
+          $item->idusuario  = $row['idusuario'];
+          $item->nombres    = $row['nombres'];
+          $item->usuario    = $row['usuario'];
+          $item->rol        = $row['rol'];
+          $item->estado     = $row['estado'];
+
+          array_push($items, $item);
+      }
+      return $items;
+      } catch (PDOException $th) {
+        error_log('USUARIOMODEL::SELECTALL => ¡Error! ' . $th->getMessage());
+        return null;
+      }
+    }
     
+    public function view($idusuario){
+      $item = new UsuarioRolDAO();
+      try{
+          $query = $this->prepare('CALL sp_usuario_view(:idusuario)');
+          $query->execute([
+            'idusuario' => $idusuario
+          ]);
+
+          while($row = $query->fetch()){
+            $item->nombres    = $row['nombres'];
+            $item->usuario    = $row['usuario'];
+            $item->rol        = $row['rol'];
+            $item->foto       = $row['foto'];  
+            $item->estado     = $row['estado'];         
+          }
+          
+          return $item;
+      }catch(PDOException $th){
+        error_log('USUARIOMODEL::SELECTID => ¡Error! ' . $th->getMessage());
+        return null;
+      }
+    }
+
     public function rolesAll() {
       try {
         $query = $this->query('CALL sp_rol_selectAll()');
@@ -59,28 +96,6 @@
       }
     } 
 
-    public function selectAll() {
-      try {
-        $query = $this->query('CALL sp_usuario_selectAll()');
-
-        $items = [];
-        while($row = $query->fetch()){
-          $item = new UsuarioRolDAO();
-          $item->idusuario  = $row['idusuario'];
-          $item->nombres    = $row['nombres'];
-          $item->usuario    = $row['usuario'];
-          $item->rol        = $row['rol'];
-          $item->estado     = $row['estado'];
-
-          array_push($items, $item);
-      }
-      return $items;
-      } catch (PDOException $th) {
-        error_log('USUARIOMODEL::SELECTALL => ¡Error! ' . $th->getMessage());
-        return null;
-      }
-    }
-
     public function existsUsuario($usuario) {
       try {
         $query = $this->prepare('CALL sp_usuario_exists(:usuario)');
@@ -108,7 +123,7 @@
         error_log('USUARIOMODEL::EXISTSUSUARIOID => ¡Error! ' . $th->getMessage());
         return null;
       }
-    }
+    } 
 
     public function insert($params) {      
       try {

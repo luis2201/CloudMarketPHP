@@ -32,17 +32,17 @@
                         <div class="row mb-3">
                           <div class="col">
                             <label for="nombres" class="form-label"><strong>Apellidos y Nombres</strong></label>
-                            <input type="text" id="nombres" name="nombres" class="form-control" onkeypress="HideMessages(this);" value="<?php //echo (isset($_POST['nombres'])) ? $_POST['nombres'] : "" ; ?>" autofocus>
+                            <input type="text" id="nombres" name="nombres" class="form-control" onkeypress="HideMessages(this);">
                             <span id="mnombres" class="text-danger"></span>
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <div class="col-md-6">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <label for="usuario" class="form-label"><strong>Usuario</strong></label>
-                            <input type="text" id="usuario" name="usuario" class="form-control" onkeypress="HideMessages(this);" value="<?php //echo (isset($_POST['nombres'])) ? $_POST['usuario'] : "" ; ?>">
+                            <input type="text" id="usuario" name="usuario" class="form-control" onkeypress="HideMessages(this);">
                             <span id="musuario" class="text-danger"></span>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <label for="idrol" class="form-label"><strong>Rol de Usuario</strong></label>
                             <select id="idrol" name="idrol" class="form-select" onchange="HideMessages(this);">
                               <option value="">-- Seleccione un rol de usuario</option>                              
@@ -58,10 +58,10 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <div class="col-md-6 d-grid">
+                          <div class="col-lg-6 col-md-12 col-sm-12 d-grid">
                             <button type="submit" class="btn btn-block btn-primary">Guardar</button>
                           </div>
-                          <div class="col-md-6 d-grid">
+                          <div class="col-lg-6 col-md-12 col-sm-12 d-grid">
                             <button type="button" id="btnCancelar" name="btnCancelar" class="btn btn-secondary">Cancelar</button>
                           </div>
                         </div>
@@ -71,7 +71,8 @@
                   </form>
                 </div>
               </div>
-
+              
+              <a href="<?php echo URL; ?>usuario" class="btn-flotante"><i class="fas fa-angle-left"></i> Volver</a>
             </div>
           </div>
         </div>
@@ -82,7 +83,6 @@
   </div>
 
   <?php require_once 'views/layers/footer.php'; ?>
+  <script src="<?php echo URL . RESOURCE; ?>js/Usuarios.js"></script>
 </body>
 </html>
-
-<?php if($this->mensaje != "") echo $this->mensaje; ?>

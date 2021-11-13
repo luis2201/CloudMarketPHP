@@ -11,11 +11,15 @@
   <!-- DataTables JS -->
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+  
+  <script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+  <script src="https:////cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script src="https:////cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+  <script src="https:////cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+  <script src="https:////cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
   <!-- Validate JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.js"></script>
   <!--Validate JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   <!-- Site JS -->
   <script src="<?php echo URL . RESOURCE; ?>js/Main.js"></script>
-  <script src="<?php echo URL . RESOURCE; ?>js/UploadImg.js"></script>
-  <script src="<?php echo URL . RESOURCE; ?>js/Usuarios.js"></script>
