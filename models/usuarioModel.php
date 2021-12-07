@@ -41,6 +41,7 @@
           ]);
 
           while($row = $query->fetch()){
+            $item->idusuario  = $row['idusuario'];
             $item->nombres    = $row['nombres'];
             $item->usuario    = $row['usuario'];
             $item->rol        = $row['rol'];

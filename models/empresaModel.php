@@ -27,8 +27,30 @@
           
           return $item;
       }catch(PDOException $th){
-        error_log('USUARIOMODEL::SELECTID => ¡Error! ' . $th->getMessage());
+        error_log('EMPRESAMODEL::VIEW => ¡Error! ' . $th->getMessage());
         return null;
+      }
+    }
+
+    public function insert($params) {      
+      try {
+        $query = $this->prepare('CALL sp_empresa_insert(:rucempresa, :logo, :razonsocial, :actividadeconomica, :ciudad, :direccion, :telefono, :email)');
+        $query->execute([
+          'rucempresa'        => $params['rucempresa'],
+          'logo'              => $params['logo'],
+          'razonsocial'       => $params['razonsocial'],
+          'actividadeconomica'=> $params['actividadeconomica'],
+          'ciudad'            => $params['ciudad'],
+          'direccion'         => $params['direccion'],
+          'telefono'          => $params['telefono'],
+          'email'             => $params['email'],          
+        ]);
+
+        error_log('USUARIOMODEL::INSERT => Registro insertado en la BD');
+        return true;
+      } catch (PDOException $th) {
+        error_log('USUARIOMODEL::INSERT => ¡Error! ' . $th->getMessage());
+        return false;
       }
     }
 

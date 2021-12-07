@@ -3,7 +3,7 @@ jQuery.validator.addMethod("letter", function (value, element) {
 }, "Solo letras");
 
 jQuery.validator.addMethod("alphanumeric", function (value, element) {
-  return this.optional(element) || /^[a-zA-záéíóúÁÉÍÓÚñÑ0-9 ]+$/i.test(value);
+  return this.optional(element) || /^[a-zA-záéíóúÁÉÍÓÚñÑ0-9,. ]+$/i.test(value);
 }, "Alfanumérico");
 
 jQuery.validator.addMethod("numeric", function (value, element) {
@@ -31,7 +31,7 @@ var validator = $('.frmAction').validate({
     },
     actividadeconomica: {
       required    : true,
-      letter      : true,
+      alphanumeric: true,
       minlength   : 4,
       maxlength   : 500
     },

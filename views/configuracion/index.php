@@ -80,7 +80,7 @@
                   <div>
                     <h4 class="fw-bold mb-0">Formas de Pago</h4>
                     <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="<?php echo URL; ?>forma-pago">
+                    <a href="<?php echo URL; ?>formapago">
                       <i data-fa-symbol="chevron-right" class="fas fa-chevron-right"></i>
                       Abrir
                       <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
@@ -97,7 +97,7 @@
                   <div>
                     <h4 class="fw-bold mb-0">Sistema</h4>
                     <p>Paragraph of text beneath the heading to explain the heading.</p>
-                    <a href="<?php echo URL; ?>forma-pago">
+                    <a href="<?php echo URL; ?>sistema">
                       <i data-fa-symbol="chevron-right" class="fas fa-chevron-right"></i>
                       Abrir
                       <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>

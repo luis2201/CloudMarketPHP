@@ -86,7 +86,7 @@ $('.frmAction').submit(function(event){
 const eliminar = document.querySelectorAll(".btnEliminar");
 eliminar.forEach(btn => {
   btn.addEventListener('click', function () {
-    const usuario = this.dataset.usuario;
+    const url = this.dataset.url;
 
     $.confirm({
       icon      : 'fas fa-question-circle',
@@ -100,7 +100,7 @@ eliminar.forEach(btn => {
           text    : 'Confirmar',
           btnClass: 'btn-orange',
           action: function () {
-            httpRequest("http://localhost/CloudMarketPHP/usuario/delete/" + usuario, function () {
+              httpRequest(url, function () {
               /*
               -- Remover fila sin recargar la página --
               const tbody = document.querySelector("#tbody-usuario");
@@ -126,7 +126,7 @@ eliminar.forEach(btn => {
 const estado = document.querySelectorAll(".btnEstado");
 estado.forEach(btn => {
   btn.addEventListener('click', function () {
-    const usuario = this.dataset.usuario;
+    const url = this.dataset.url;
 
     $.confirm({
       icon      : 'fas fa-question-circle',
@@ -140,7 +140,7 @@ estado.forEach(btn => {
           text    : 'Confirmar',
           btnClass: 'btn-blue',
           action: function () {
-            httpRequest("http://localhost/CloudMarketPHP/usuario/change/" + usuario, function () {
+            httpRequest(url, function () {
 
             $('#RespuestaForm').html(this.responseText);
             });

@@ -1,7 +1,7 @@
 <?php
 
   /* *************************************************** */
-  /* Controlador para la carga de las vistas default     */
+  /* Controlador para la carga de las vista Usuario      */
   /* *************************************************** */  
 
   class UsuarioController extends Controller {

@@ -55,8 +55,8 @@
                           <td class="text-center">
                             <a class="btn btn-sm btn-link" href="<?php echo URL . 'usuario/view/' . $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-eye text-warning"></i></a>
                             <a class="btn btn-sm btn-link" href="<?php echo URL . 'usuario/edit/' . $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-edit text-dark"></i></a>
-                            <button type="button" class="btn btn-sm btn-link btnEliminar" data-usuario="<?php echo $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-trash-alt text-danger"></i></button>
-                            <button type="button" class="btn btn-sm btn-link btnEstado" data-usuario="<?php echo $obj->encryption($usuario->idusuario); ?>"><i class="fas fa-retweet text-info"></i></button>
+                            <button type="button" class="btn btn-sm btn-link btnEliminar" data-url="<?php echo URL.'usuario/delete/'.$obj->encryption($usuario->idusuario); ?>"><i class="fas fa-trash-alt text-danger"></i></button>
+                            <button type="button" class="btn btn-sm btn-link btnEstado" data-url="<?php echo URL.'usuario/change/'.$obj->encryption($usuario->idusuario); ?>"><i class="fas fa-retweet text-info"></i></button>
                           </td>
                         </tr>
                       <?php
